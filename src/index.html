@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+
+<!-- start of the html document with german as primary language -->
+<html lang="de">
+
+<head>
+      <!-- using the UTF-8 character encoding -->
+      <meta charset="UTF-8">
+      <!-- page title -->
+      <title> Tischtennis Turnier </title>
+</head>
+
+<body>
+      <!-- start of the html body content -->
+      <header>
+            <!-- representative banner image -->
+            <img id="banner" src="../img/table_tennis_banner.jpg" alt="Tischtennis Turnier Banner Bild" width="50%"
+                  height="50%">
+            <!-- main title -->
+            <h1> Tischtennis Turnier </h1>
+
+            <hr />
+      </header>
+
+      <nav>
+            <h3> Inhalt </h3>
+            <!-- navigation bar implemented as unordered list; each list element is linked to a specific section defined in main -->
+            <ul id="nav-bar">
+                  <li> <a href="#description"> Beschreibung </a> </li>
+                  <li> <a href="#requirements"> Anforderungen </a> </li>
+                  <li> <a href="#registration"> Anmeldung </a> </li>
+                  <li> <a href="#rules"> Regeln </a> </li>
+                  <li> <a href="#tournament-process"> Turnierablauf </a> </li>
+                  <li> <a href="#podium"> Podium </a> </li>
+                  <li> <a href="#imprint"> Impressum </a> </li>
+            </ul>
+
+            <hr />
+      </nav>
+
+      <main>
+            <!-- small description about the tournament -->
+            <div id="description">
+                  Das große Tischtennis Turnier namens "Tischtennis-Meisterschaft 2023" versammelte acht talentierte
+                  Spieler aus der ganzen Welt. Die Atmosphäre war elektrisierend als die Teilnehmer in der glänzenden
+                  Sporthalle zusammenkamen.
+                  <br>
+                  Die Tischtennis-Meisterschaft 2023 wird in den Herzen der Teilnehmer und Zuschauer für immer in
+                  Erinnerung bleiben. Das Turnier hatte gezeigt, dass Tischtennis mehr als nur ein einfaches Spiel ist
+                  - es ist eine Quelle der Inspiration, des Kampfgeistes und des unermüdlichen Strebens nach Exzellenz.
+            </div>
+
+            <hr />
+
+            <!-- defines the requirements for the participants of the tournament -->
+            <div id="requirements">
+                  <h4> Folgende Dinge sind für die Teilnehmer des Turniers <em> unabdingbar: </em> </h4>
+                  <ul>
+                        <li> Tischtennis-Schläger </li>
+                        <li> Geld für die Anmeldegebühr </li>
+                        <li> Ein wenig Skill im Tischtennis (sehr wichtig) </li>
+                  </ul>
+            </div>
+
+            <hr />
+
+            <!-- defines the registration process for the tournament -->
+            <div id="registration">
+                  <p> Nachfolgend sind die <b> Schritte zur Anmeldung </b> aufgeführt: </p>
+                  <!-- registration steps as ordered list -->
+                  <ol>
+                        <li> Drucken Sie das Anmeldeformular aus. </li>
+                        <li> Beschriften Sie das Formular mit Ihren Daten - auch die Bankdaten inklusive PIN (aus
+                              Gründen der Sicherheit) </li>
+                        <li> Schicken Sie das vollständig ausgefüllte Formular per Post oder per Mail an uns. </li>
+                  </ol>
+            </div>
+
+            <hr />
+
+            <!-- provides a link to an external website describing the basic table tennis rules -->
+            <div id="rules">
+                  <p> Falls Sie noch nicht mit den Regeln im Tischtennis vertraut sind, wird Ihnen die folgende Website
+                        helfen, die Grundlagen zu erlernen: </p>
+                  <!-- link to the external website -->
+                  <a href="https://www.tischtennis.de/mein-sport/spielen/wichtigste-spielregeln.html">
+                        Regeln des DTB
+                  </a>
+            </div>
+
+            <hr />
+
+            <!-- provides the tournament tree with all the participants -->
+            <div id="tournament-process">
+                  <!-- tournament tree implemented as a table -->
+                  <table id="participants-table">
+                        <thead>
+                              <tr>
+                                    <th colspan="4"> Ablauf des Turniers </th>
+                              </tr>
+                        </thead>
+
+                        <tbody>
+                              <!-- first row -->
+                              <tr>
+                                    <td> Max </td>
+                                    <td rowspan="2"> Viertelfinale 1 </td>
+                                    <td rowspan="4"> Halbfinale 1 </td>
+                                    <td rowspan="8"> Finale </td>
+                              </tr>
+                              <!-- second row -->
+                              <tr>
+                                    <td> Hans </td>
+                              </tr>
+                              <!-- third row -->
+                              <tr>
+                                    <td> Emma </td>
+                                    <td rowspan="2"> Viertelfinale 2 </td>
+                              </tr>
+                              <!-- fourth row -->
+                              <tr>
+                                    <td> Fritz </td>
+                              </tr>
+                              <!-- fifth row -->
+                              <tr>
+                                    <td> Sarah </td>
+                                    <td rowspan="2"> Viertelfinale 3 </td>
+                                    <td rowspan="4"> Halbfinale 2 </td>
+                              </tr>
+                              <!-- sixth row -->
+                              <tr>
+                                    <td> Jonas </td>
+                              </tr>
+                              <!-- seventh row -->
+                              <tr>
+                                    <td> Peter </td>
+                                    <td rowspan="2"> Viertelfinale 3 </td>
+                              </tr>
+                              <!-- eighth row -->
+                              <tr>
+                                    <td> Julia </td>
+                              </tr>
+                        </tbody>
+
+                        <tfoot>
+                              <tr>
+                                    <!-- link to another site with detailed information about small tournaments -->
+                                    <th colspan="4"> <a href="small-tournaments-info.html"> Hinweis für kleinere Turniere </a> </th>
+                              </tr>
+                        </tfoot>
+                  </table>
+            </div>
+
+            <hr />
+
+            <!-- podium for the winners of the tournament -->
+            <div id="podium">
+                  <table id="podium-table">
+                        <!-- first row -->
+                        <tr>
+                              <td> </td>
+                              <th colspan="3" class="placement-col"> (1) &nbsp Max </th>
+                              <td> </td>
+                        </tr>
+                        <!-- second row -->
+                        <tr>
+                              <td id="second_winner" class="placement-col"> (2) &nbsp Laura </td>
+                              <td colspan="3"> </td>
+                              <td id="third_winner" class="placement-col"> (3) &nbsp Jonas </td>
+                        </tr>
+                  </table>
+            </div>
+
+            <hr />
+      </main>
+
+      <footer>
+            <div id="imprint">
+                  <!-- defines the contact information of the tournament's management -->
+                  <address>
+                        <h3> Impressum: </h3>
+                        <table>
+                              <!-- first row -->
+                              <tr>
+                                    <td> Max Mustermann </td>
+                              </tr>
+                              <!-- second row -->
+                              <tr>
+                                    <td> Mustermannstraße 1 </td>
+                              </tr>
+                              <!-- third row -->
+                              <tr>
+                                    <td> 73733 Musterstadt </td>
+                              </tr>
+                              <!-- fourth row -->
+                              <tr>
+                                    <td> Telefon: 07121 11111 </td>
+                              </tr>
+                              <!-- fifth row -->
+                              <tr>
+                                    <td> E-Mail: mustermail@muster.de </td>
+                              </tr>
+                        </table>
+                  </address>
+
+                  <hr />
+
+                  <!-- disclaimer so that the participants can not sue us -->
+                  <a id="disclaimer"
+                        href="https://www.bsi.bund.de/DE/Service/Haftungsausschluss/haftungsausschluss_node.html">
+                        Haftungsausschluss </a>
+            </div>
+      </footer>
+</body>
+
+</html>
