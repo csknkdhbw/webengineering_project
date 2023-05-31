@@ -1,5 +1,6 @@
 # webengineering_project
-### Projekt zur Vorlesung Web Engineering 1 an der DHBW Stuttgart
+
+Projekt zur Vorlesung Web Engineering 1 an der DHBW Stuttgart
 
 ## Website für ein Tischtennis Turnier
 
