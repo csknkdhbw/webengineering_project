@@ -1,0 +1,94 @@
+body {
+      margin: 0;
+}
+
+header {
+      font-size: 1.5em;
+      width: 99.2vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.80);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+}
+
+#title {
+      display: block;
+      text-align: center;
+}
+
+header h1 {
+      font-size: 2.5em;
+}
+
+#background-video {
+      position: absolute;
+      z-index: -1;
+      top: 0px;
+      left: 0px;
+      /* fixed to left. Replace it by right if you want.*/
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+}
+
+nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      list-style-type: none;
+      height: 25%;
+      margin: 0 auto;
+      align-items: center;
+      justify-content: center;
+
+      position: sticky;
+      top: 0;
+}
+
+.menu {
+      display: flex;
+      padding-left: 0;
+      gap: 50px;
+}
+
+.menu li {
+      height: 80px;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      /* distribute gap between list items evenly */
+      flex: 1;
+      align-items: center;
+}
+
+.menu li a {
+      display: flex;
+      text-align: center;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 25px;
+      width: 180px;
+      height: 30px;
+      color: white;
+      text-decoration: none;
+      font-size: 0.75em;
+      border: 2px solid white;
+      align-items: center;
+      justify-content: center;
+}
+
+.menu li a:hover {
+      border: 2px solid white;
+      font-size: 0.8em;
+      font-weight: bold;
+}
+
+.icon {
+      /* Fügt einen Abstand zwischen dem Icon und dem Text hinzu */
+      margin-right: 10px;
+}
