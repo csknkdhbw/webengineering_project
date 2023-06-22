@@ -68,16 +68,15 @@ nav {
 
 .menu li a {
       display: flex;
-      text-align: center;
-      padding: 10px;
-      margin: 5px;
-      border-radius: 25px;
-      width: 180px;
-      height: 30px;
-      color: white;
       text-decoration: none;
       font-size: 0.75em;
       border: 2px solid white;
+      border-radius: 25px;
+      padding: 10px;
+      margin: 5px;
+      width: 180px;
+      height: 30px;
+      text-align: center;
       align-items: center;
       justify-content: center;
 }
@@ -91,4 +90,12 @@ nav {
 .icon {
       /* Fügt einen Abstand zwischen dem Icon und dem Text hinzu */
       margin-right: 10px;
+      width: 29px;
+      height: 29px;
+}
+
+@media only screen and (max-width: 600px) {
+      .menu {
+            flex-direction: column;
+      }
 }

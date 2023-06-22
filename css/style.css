@@ -6,8 +6,22 @@ body {
     background-color: #1F1F1F;
 }
 
+img {
+    width: 29px;
+    height: 29px;
+}
+
 a {
-    text-decoration-color: none;
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+table {
+    margin: 0 auto;
 }
 
 table,
@@ -16,14 +30,16 @@ tr {
     border-style: solid;
     border-color: #d4d4d4;
     border-width: 1px 1px 1px 1px;
-    border-radius: 3%;
+    border-radius: 5%;
     background-color: #2e2e2e;
+
+    padding: 15px;
 }
 
 tbody td,
 tbody tr {
     border-width: 1px 1px 1px 3px;
-    border-left-color: rgb(38, 42, 63);
+    /* border-left-color: rgb(38, 42, 63); */
 }
 
 #table-description {
@@ -47,4 +63,45 @@ tbody tr {
 .removed-cell {
     border: none;
     background-color: #1F1F1F;
+}
+
+/*
+main content sections layout 
+*/
+
+h2 {
+    color: white;
+    font-size: 1.4em;
+    margin-left: 10%;
+    margin-top: 70px;
+}
+
+/*
+use the element-child selector to layout the icons of the titles
+*/
+h2 > img {
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+/*
+use the adjacent selector to design the sections following a title
+*/
+h2 + div {
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
+
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 25px;
+    margin-bottom: 70px;
+
+    color: white;
+
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }

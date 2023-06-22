@@ -6,6 +6,7 @@
 <head>
       <!-- using the UTF-8 character encoding -->
       <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- page title -->
       <title> Tischtennis Turnier </title>
       <!-- CSS stylesheet reference -->
@@ -19,7 +20,7 @@
       <header>
             <video id="background-video" src="../res/video/background_video.mp4" autoplay muted loop></video>
             <div id="title">
-                  <h1> TISCHTENNIS TURNIER </h1>
+                  <h1> TISCHTENNIS MEISTERSCHAFT </h1>
                   <h1> → &nbsp; 2023 &nbsp; ← </h1>
             </div>
 
@@ -27,22 +28,22 @@
                   <!-- main navigation menu -->
                   <ul class="menu">
                         <li><a href="#description"> <span class="icon"><img src="../res/img/description_icon.svg"
-                                                width="29px" height="29px" alt="Home Icon" /></span> Beschreibung </a>
+                                                alt="Home Icon" /></span> Beschreibung </a>
                         </li>
                         <li><a href="#requirements"> <span class="icon"><img src="../res/img/requirements_icon.svg"
-                                                width="29px" height="29px" alt="Home Icon" /></span> Anforderungen </a>
+                                                alt="Home Icon" /></span> Anforderungen </a>
                         </li>
                         <li><a href="#registration"> <span class="icon"><img src="../res/img/registration_icon.svg"
-                                                width="29px" height="29px" alt="Home Icon" /></span> Anmeldung </a></li>
+                                                alt="Home Icon" /></span> Anmeldung </a></li>
                         <li><a href="#tournament-process"> <span class="icon"><img
-                                                src="../res/img/tournament_process_icon.svg" width="29px" height="29px"
-                                                alt="Home Icon" /></span> Turnierablauf </a>
+                                                src="../res/img/tournament_process_icon.svg" alt="Home Icon" /></span>
+                                    Turnierablauf </a>
                         </li>
-                        <li><a href="#podium"> <span class="icon"><img src="../res/img/podium_icon.svg" width="29px"
-                                                height="29px" alt="Home Icon" /></span> Siegerpodium </a>
+                        <li><a href="#podium"> <span class="icon"><img src="../res/img/podium_icon.svg"
+                                                alt="Home Icon" /></span> Siegerpodium </a>
                         </li>
-                        <li><a href="#imprint"> <span class="icon"><img src="../res/img/imprint_icon.svg" width="29px"
-                                                height="29px" alt="Home Icon" /></span> Impressum </a></li>
+                        <li><a href="#imprint"> <span class="icon"><img src="../res/img/imprint_icon.svg"
+                                                alt="Home Icon" /></span> Impressum </a></li>
                   </ul>
             </nav>
       </header>
@@ -52,32 +53,40 @@
 
       <main>
             <!-- small description about the tournament -->
+            <h2> <img src="../res/img/description_icon.svg" alt="Home Icon" /> Beschreibung </h2>
             <div id="description">
-                  Das große Tischtennis Turnier namens "Tischtennis-Meisterschaft 2023" versammelte acht talentierte
-                  Spieler aus der ganzen Welt. Die Atmosphäre war elektrisierend als die Teilnehmer in der glänzenden
-                  Sporthalle zusammenkamen.
-                  <br>
-                  Die <abbr title="Tischtennis-Meisterschaft 2023"> TTM 2023 </abbr> wird in den Herzen der Teilnehmer
-                  und
-                  Zuschauer für immer in Erinnerung bleiben. Das Turnier hatte gezeigt, dass Tischtennis mehr als nur
-                  ein einfaches Spiel ist
-                  - es ist eine Quelle der Inspiration, des Kampfgeistes und des unermüdlichen Strebens nach Exzellenz.
+                  <article>
+                        Das große Tischtennis Turnier namens "Tischtennis Meisterschaft 2023" versammelte acht
+                        talentierte
+                        Spieler aus der ganzen Welt. Die Atmosphäre war elektrisierend als die Teilnehmer in der
+                        glänzenden
+                        Sporthalle zusammenkamen.
+                        <br>
+                        Die <abbr title="Tischtennis-Meisterschaft 2023"> TTM 2023 </abbr> wird in den Herzen der
+                        Teilnehmer
+                        und
+                        Zuschauer für immer in Erinnerung bleiben. Das Turnier hatte gezeigt, dass Tischtennis mehr als
+                        nur
+                        ein einfaches Spiel ist
+                        - es ist eine Quelle der Inspiration, des Kampfgeistes und des unermüdlichen Strebens nach
+                        Exzellenz.
+                  </article>
             </div>
 
-            <hr />
-
+            <h2> <img src="../res/img/requirements_icon.svg" alt="Home Icon" /> Anforderungen </h2>
             <!-- defines the requirements for the participants of the tournament -->
             <div id="requirements">
-                  <h4> Folgende Dinge sind für die Teilnehmer des Turniers <em> unabdingbar: </em> </h4>
-                  <ul>
-                        <li> Tischtennis-Schläger </li>
-                        <li> Geld für die Anmeldegebühr </li>
-                        <li> Ein wenig Skill im Tischtennis (sehr wichtig) </li>
-                  </ul>
+                  <section>
+                        <p> Folgende Dinge sind für die Teilnehmer des Turniers <em> unabdingbar: </em> </p>
+                        <ul>
+                              <li> Tischtennis-Schläger </li>
+                              <li> Geld für die Anmeldegebühr </li>
+                              <li> Ein wenig Skill im Tischtennis (sehr wichtig) </li>
+                        </ul>
+                  </section>
             </div>
 
-            <hr />
-
+            <h2> <img src="../res/img/registration_icon.svg" alt="Home Icon" /> Anmeldung (+Regeln) </h2>
             <!-- defines the registration process for the tournament -->
             <div id="registration">
                   <p> Nachfolgend sind die <b> Schritte zur Anmeldung </b> aufgeführt: </p>
@@ -88,22 +97,20 @@
                               Gründen der Sicherheit) </li>
                         <li> Schicken Sie das vollständig ausgefüllte Formular per Post oder per Mail an uns. </li>
                   </ol>
+
+                  <!-- provides a link to an external website describing the basic table tennis rules -->
+                  <div id="rules">
+                        <p> Falls Sie noch nicht mit den Regeln im Tischtennis vertraut sind, wird Ihnen die folgende
+                              Website
+                              helfen, die Grundlagen zu erlernen: </p>
+                        <!-- link to the external website -->
+                        <a href="https://www.tischtennis.de/mein-sport/spielen/wichtigste-spielregeln.html">
+                              Regeln des <abbr title="Deutscher Tennisbund"> DTB </abbr>
+                        </a>
+                  </div>
             </div>
 
-            <hr />
-
-            <!-- provides a link to an external website describing the basic table tennis rules -->
-            <div id="rules">
-                  <p> Falls Sie noch nicht mit den Regeln im Tischtennis vertraut sind, wird Ihnen die folgende Website
-                        helfen, die Grundlagen zu erlernen: </p>
-                  <!-- link to the external website -->
-                  <a href="https://www.tischtennis.de/mein-sport/spielen/wichtigste-spielregeln.html">
-                        Regeln des <abbr title="Deutscher Tennisbund"> DTB </abbr>
-                  </a>
-            </div>
-
-            <hr />
-
+            <h2> <img src="../res/img/tournament_process_icon.svg" alt="Home Icon" /> Turnierablauf </h2>
             <!-- provides the tournament tree with all the participants -->
             <div id="tournament-process">
                   <!-- tournament tree implemented as a table -->
@@ -183,8 +190,7 @@
                   <a href="large-tournaments-info.html"> Hinweis für größere Turniere </a>
             </div>
 
-            <hr />
-
+            <h2> <img src="../res/img/podium_icon.svg" alt="Home Icon" /> Podium </h2>
             <!-- podium for the winners of the tournament -->
             <div id="podium">
                   <table id="podium-table">
