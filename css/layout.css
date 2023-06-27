@@ -1,0 +1,27 @@
+/*An extention file for css related to the Layout (flex-/gridbox)*/
+/*--------------------------------------------------------------*/
+
+/*History pages as a flexbox*/
+.history-pages-nav {
+    display: flex;
+    flex: 1;
+    gap: 2em;
+}
+.history-pages-nav li {
+    display: flex;
+    flex: 1;
+    gap: 1em;
+    align-items: center;
+}
+.history-pages-nav li a{
+    display: flex;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 5px;
+    width: 180px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
