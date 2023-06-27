@@ -103,12 +103,7 @@ h2 + div {
     padding-right: 30px;
 }
 
-#history-pages{
-    display:flex;
-    list-style-type: none;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
+
+
 
 

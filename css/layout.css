@@ -2,16 +2,21 @@
 /*--------------------------------------------------------------*/
 
 /*History pages as a flexbox*/
+.history-pages{
+    display:flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
 .history-pages-nav {
     display: flex;
     flex: 1;
-    gap: 2em;
+    gap: 0.5em;
+    align-items: center;
+    flex-direction: column;
 }
 .history-pages-nav li {
     display: flex;
-    flex: 1;
-    gap: 1em;
-    align-items: center;
 }
 .history-pages-nav li a{
     display: flex;
@@ -24,4 +29,54 @@
     height: 30px;
     align-items: center;
     justify-content: center;
+}
+
+
+/*Gridlayout*/
+main{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto auto auto 1fr;
+}
+
+#description-section{
+    grid-column: 1/-1;
+    grid-row: 1;
+}
+#requirements-section{
+    grid-column: 1/-1;
+    grid-row: 2;
+}
+#registration-section {
+    grid-column: 1/-1;
+    grid-row: 3;
+}
+#tournament-section{
+    grid-column: 1/1;
+    grid-row: 4;
+}
+#podium-section{
+    grid-column: 2/2;
+    grid-row: 4;
+}
+#history-section{
+    grid-column: 1/-1;
+    grid-row: 5;
+}
+footer{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 4fr 1fr 1fr;
+}
+address{
+    grid-column: -1/-1;
+    grid-row: 1/1;
+}
+#nav-bar-icons{
+    grid-column: 1/1;
+    grid-row: 2/2;
+}
+#disclaimer{
+    grid-column: 1/1;
+    grid-column: 3/3;
 }
