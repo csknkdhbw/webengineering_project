@@ -48,7 +48,6 @@ tr {
 tbody td,
 tbody tr {
     border-width: 1px 1px 1px 3px;
-    /* border-left-color: rgb(38, 42, 63); */
 }
 
 
@@ -59,7 +58,6 @@ tbody tr {
     font-style:inherit;
     text-decoration-style:solid;
     table-layout:auto;
-    
 }
 
 #trophy{
@@ -154,7 +152,7 @@ h2 + div {
     margin-left: 8%;
     margin-right: 8%;
     margin-top: 25px;
-    margin-bottom: 70px;
+    margin-bottom: none;
 
     color: white;
 
