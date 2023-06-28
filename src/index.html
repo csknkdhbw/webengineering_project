@@ -10,7 +10,7 @@
 
       <!-- page title -->
       <title> Tischtennis Meisterschaft 2023 </title>
-      
+
       <!-- CSS stylesheet reference -->
       <link rel="stylesheet" href="../css/style.css" />
       <!-- CSS stylesheet for the main page (index.html) header -->
@@ -86,10 +86,12 @@
             <audio controls loop autoplay src="../res/audio/tabletennis-sample.mp3"> </audio>
 
             <!-- button for switching the view mode (DARK/WHITE) -->
-            <button id="mode-switch-button" type="button" style="background: none; border: none;" onclick="switchMode()"
-                  onmouseover="hoverModeButton()" onmouseleave="leaveModeButton()">
+            <abbr title="Change View Mode (DARK/WHITE)">
+                  <button id="mode-switch-button" type="button" style="background: none; border: none;"
+                        onclick="switchMode()" onmouseover="hoverModeButton()" onmouseleave="leaveModeButton()">
+            </abbr>
 
-                  <img id="mode-switch-icon" src="../res/img/mode_white.svg" />
+            <img id="mode-switch-icon" src="../res/img/mode_white.svg" />
             </button>
       </aside>
 
@@ -141,8 +143,7 @@
 
             <passage id="registration-section">
                   <h2 class="registration"> <img id="registration-icon" src="../res/img/registration_icon.svg"
-                              alt="Home Icon" /> Anmeldung
-                        (+Regeln) </h2>
+                              alt="Home Icon" /> Anmeldung und Regeln </h2>
                   <!-- defines the registration process for the tournament -->
                   <div class="registration" id="registration-div">
                         <p> Nachfolgend sind die <b> Schritte zur Anmeldung </b> aufgeführt: </p>
@@ -187,52 +188,59 @@
                                     <!-- first row -->
                                     <tr>
 
-                                          <td> <b class="table-description"><time datetime="2023-05-25T08:00">25.05.2023
-                                                            8
-                                                            Uhr</time></b><br /> Viertelfinale 1
-                                                <hr />Hans vs Max
+                                          <td class="quarter-final-td"> <b class="table-description">
+                                                      <time datetime="2023-05-25T08:00">25.05.2023 8 Uhr</time>
+                                                </b>
+                                                <br />
+                                                Viertelfinale 1
+                                                <hr />
+                                                Hans vs. Max
                                           </td>
-                                          <td rowspan="2"> <b class="table-description"><time
+                                          <td class="semi-final-td" rowspan="2"> <b class="table-description"><time
                                                             datetime="2023-05-26T08:00">26.05.2023 8
                                                             Uhr</time></b><br />Halbfinale 1
-                                                <hr />Halbfinalist1 vs Halbfinalist2
+                                                <hr />Halbfinalist 1 <br /> vs. <br /> Halbfinalist 2
                                           </td>
-                                          <td rowspan="4"> <b class="table-description"><time
+                                          <td class="final-td" rowspan="4"> <b class="table-description"><time
                                                             datetime="2023-05-27T08:00">27.05.2023 8
                                                             Uhr</time></b><br />Finale
-                                                <hr />Finalist1 vs Finalist2
+                                                <hr />Finalist 1 <br /> vs. <br /> Finalist 2
                                           </td>
                                     </tr>
 
                                     <!-- second row -->
                                     <tr>
 
-                                          <td> <b class="table-description"><time datetime="2023-05-25T10:00">25.05.2023
+                                          <td class="quarter-final-td"> <b class="table-description"><time
+                                                            datetime="2023-05-25T10:00">25.05.2023
                                                             10
                                                             Uhr</time></b><br />Viertelfinale 2
-                                                <hr />Tom vs Jeremias
+                                                <hr />
+                                                Tom vs. Jeremias
                                           </td>
                                     </tr>
                                     <!-- third row -->
                                     <tr>
 
-                                          <td> <b class="table-description"><time datetime="2023-05-25T12:00">25.05.2023
+                                          <td class="quarter-final-td"> <b class="table-description"><time
+                                                            datetime="2023-05-25T12:00">25.05.2023
                                                             12
                                                             Uhr</time></b><br />Viertelfinale 3
-                                                <hr />Lisa vs Bob
+                                                <hr />Lisa vs. Bob
                                           </td>
-                                          <td rowspan="2"> <b class="table-description"><time
+                                          <td class="semi-final-td" rowspan="2"> <b class="table-description"><time
                                                             datetime="2023-05-26T14:00">25.05.2023 14
                                                             Uhr</time></b><br />Halbfinale 2
-                                                <hr /> Halbfinalist1 vs Halbfinalist2
+                                                <hr /> Halbfinalist 1 <br /> vs. <br /> Halbfinalist 2
                                           </td>
                                     </tr>
                                     <!-- fourth row -->
                                     <tr>
-                                          <td> <b class="table-description"><time datetime="2023-05-25T14:00">25.05.2023
+                                          <td class="quarter-final-td"> <b class="table-description"><time
+                                                            datetime="2023-05-25T14:00">25.05.2023
                                                             14
                                                             Uhr</time></b><br />Viertelfinale 4
-                                                <hr />Hans vs Max
+                                                <hr />Hans vs. Max
                                           </td>
                                     </tr>
                               </tbody>
@@ -245,20 +253,19 @@
                               </tfoot>
                         </table>
 
-                        <br />
-
-                        <!-- link to another site with detailed information about small tournaments -->
-                        <a href="small-tournaments-info.html"> Hinweis für kleinere Turniere </a>
-
-                        <br />
-
-                        <!-- link to another site with detailed information about large tournaments -->
-                        <a href="large-tournaments-info.html"> Hinweis für größere Turniere </a>
+                        <section id="tournament-reference">
+                              <!-- link to another site with detailed information about small tournaments -->
+                              <a href="small-tournaments-info.html"> Hinweis für kleinere Turniere </a>
+                              <!-- link to another site with detailed information about large tournaments -->
+                              <a href="large-tournaments-info.html"> Hinweis für größere Turniere </a>
+                        </section>
                   </div>
             </passage>
 
             <passage id=podium-section>
-                  <h2 class="podium"> <img id="podium-icon" src="../res/img/podium_icon.svg" alt="Home Icon" /> Podium
+                  <h2 class="podium">
+                        <img id="podium-icon" src="../res/img/podium_icon.svg" alt="Home Icon" />
+                        Podium
                   </h2>
                   <!-- podium for the winners of the tournament -->
                   <div class="podium" id="description-div">
@@ -301,10 +308,10 @@
                   <div class="history-pages" id="history-div">
                         <!-- navigationbar for past tournaments -->
                         <ul class="history-pages-nav">
-                              <li><a href="history/tournament1.html">Tunier 2022</a></li>
-                              <li><a href="history/tournament2.html">Tunier 2021</a></li>
-                              <li><a href="history/tournament3.html">Tunier 2019</a></li>
-                              <li><a href="history/tournament4.html">Tunier 2018</a></li>
+                              <li><a class="history-link" href="history/tournament1.html">Turnier 2022</a></li>
+                              <li><a class="history-link" href="history/tournament2.html">Turnier 2021</a></li>
+                              <li><a class="history-link" href="history/tournament3.html">Turnier 2019</a></li>
+                              <li><a class="history-link" href="history/tournament4.html">Turnier 2018</a></li>
                         </ul>
                   </div>
             </passage>

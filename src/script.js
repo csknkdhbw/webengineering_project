@@ -33,6 +33,9 @@ function switchMode() {
                   link_elements[i].style.borderColor = "#1F1F1F";
             }
 
+            // change border color of tournament-reference
+            document.getElementById("tournament-reference").style.borderColor = "#1F1F1F";
+
             // change table background color
             const table_elements = document.getElementsByTagName("table");
             for (let i = 0; i < table_elements.length; i++) {
@@ -71,6 +74,9 @@ function switchMode() {
                   link_elements[i].style.color = "white";
                   link_elements[i].style.borderColor = "white";
             }
+
+            // change border color of tournament-reference
+            document.getElementById("tournament-reference").style.borderColor = "white";
 
             // change table background color
             const table_elements = document.getElementsByTagName("table");

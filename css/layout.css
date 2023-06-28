@@ -2,12 +2,6 @@
 /*--------------------------------------------------------------*/
 
 /*History pages as a flexbox*/
-.history-pages{
-    display:flex;
-    list-style-type: none;
-    align-items: center;
-    justify-content: center;
-}
 .history-pages-nav {
     display: flex;
     flex: 1;
@@ -18,10 +12,11 @@
 .history-pages-nav li {
     display: flex;
 }
+
 .history-pages-nav li a {
     display: flex;
     text-decoration: none;
-    border: 2px solid white;
+    border: 1px solid white;
     border-radius: 25px;
     padding: 10px;
     margin: 5px;
@@ -41,7 +36,7 @@ footer {
 
 /*Grid-layout for screen > 600px*/
 @media (min-width: 600px){
-    main{
+    main {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto auto auto 1fr auto;
         gap: 1px;
@@ -62,24 +57,27 @@ footer {
         grid-row: 3;
     }
 
+    #history-section{
+        grid-column: 2;
+        grid-row: 4;   
+    }
+
     #tournament-section{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 0;
         grid-column: 1;
-        grid-row: 4/6;
+        grid-row: 4/-1;
         justify-content: end;
-        margin-right: 10%;
+        margin-right: 8em;
     }
 
     #podium-section{
         grid-column: 2;
         grid-row: 5;
     }
-    
-    #history-section{
-        grid-column: 2;
-        grid-row: 4;
-        
-    }
-    
+
     
     footer {
         grid-template-columns: 2fr 1fr;
