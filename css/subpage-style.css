@@ -1,0 +1,28 @@
+#subpages-div{
+    display:flex;
+    flex-flow: row;
+    gap: auto;
+    justify-content: center;
+}
+#subpages-div ul{
+    display: flex;
+    flex-flow: row;
+    gap: 0.5em;
+    justify-content: center;
+}
+#subpages-div li{
+    display:flex;
+    justify-content: center;
+}
+#subpages-div ul a{
+    display: flex;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 5px;
+    width: 180px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
