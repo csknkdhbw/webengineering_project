@@ -37,35 +37,35 @@
                   <!-- main navigation menu -->
                   <ul class="menu">
                         <li>
-                              <a href="#description">
+                              <a href="#description-head">
                                     <img class="icon" src="../res/img/description_icon.svg" alt="Home Icon" />
                                     Beschreibung
                               </a>
                         </li>
 
                         <li>
-                              <a href="#requirements">
+                              <a href="#requirements-head">
                                     <img class="icon" src="../res/img/requirements_icon.svg" alt="Home Icon" />
                                     Anforderungen
                               </a>
                         </li>
 
                         <li>
-                              <a href="#registration">
+                              <a href="#registration-head">
                                     <img class="icon" src="../res/img/registration_icon.svg" alt="Home Icon" />
                                     Anmeldung
                               </a>
                         </li>
 
                         <li>
-                              <a href="#tournament-process">
+                              <a href="#tournament-process-head">
                                     <img class="icon" src="../res/img/tournament_process_icon.svg" alt="Home Icon" />
                                     Turnierablauf
                               </a>
                         </li>
 
                         <li>
-                              <a href="#podium">
+                              <a href="#podium-head">
                                     <img class="icon" src="../res/img/podium_icon.svg" alt="Home Icon" />
                                     Siegerpodium
                               </a>
@@ -98,8 +98,8 @@
             <!-- small description about the tournament -->
 
             <passage id="description-section">
-                  <h2 class="description"> <img id="description-icon" src="../res/img/description_icon.svg"
-                              alt="Home Icon" /> Beschreibung
+                  <h2 class="description" id="description-head"> <img id="description-icon"
+                              src="../res/img/description_icon.svg" alt="Home Icon" /> Beschreibung
                   </h2>
                   <div class="description" id="description-div">
                         <article>
@@ -123,8 +123,8 @@
 
             </passage>
             <passage id="requirements-section">
-                  <h2 class="requirements"> <img id="requirements-icon" src="../res/img/requirements_icon.svg"
-                              alt="Home Icon" /> Anforderungen
+                  <h2 class="requirements" id="requirements-head"> <img id="requirements-icon"
+                              src="../res/img/requirements_icon.svg" alt="Home Icon" /> Anforderungen
                   </h2>
                   <!-- defines the requirements for the participants of the tournament -->
                   <div class="requirements">
@@ -140,8 +140,8 @@
             </passage>
 
             <passage id="registration-section">
-                  <h2 class="registration"> <img id="registration-icon" src="../res/img/registration_icon.svg"
-                              alt="Home Icon" /> Anmeldung
+                  <h2 class="registration" id="registration-head"> <img id="registration-icon"
+                              src="../res/img/registration_icon.svg" alt="Home Icon" /> Anmeldung
                         (+Regeln) </h2>
                   <!-- defines the registration process for the tournament -->
                   <div class="registration" id="registration-div">
@@ -176,10 +176,11 @@
 
 
             <passage id="tournament-section">
-                  <h2 class="tournament-process"> <img src="../res/img/tournament_process_icon.svg" alt="Home Icon" />
+                  <h2 class="tournament-process" id="tournament-process-head"> <img
+                              src="../res/img/tournament_process_icon.svg" alt="Home Icon" />
                         Turnierablauf </h2>
                   <!-- provides the tournament tree with all the participants -->
-                  <div class="tournament-process" id="tournament-structure-div">
+                  <div class="tournament-process" id="tournament-process-div">
                         <!-- tournament tree implemented as a table -->
                         <table id="participants-table">
                               <thead>
@@ -263,26 +264,6 @@
             </passage>
 
 
-            <passage id=podium-section>
-                  <h2 class="podium"> <img id="podium-icon" src="../res/img/podium_icon.svg" alt="Home Icon" /> Podium
-                  </h2>
-                  <!-- podium for the winners of the tournament -->
-                  <div class="podium" id="description-div">
-                        <table id="podium-table">
-                              <!-- first row -->
-                              <tr>
-                                    <td class="removed-cell"> </td>
-                                    <th colspan="3" rowspan="3" id="first_winner" class="placement-col"> &nbsp Max </th>
-                                    <td class="removed-cell"> </td>
-                              </tr>
-                              <!-- second row -->
-                              <tr>
-                                    <td id="second_winner" class="placement-col"> &nbsp Laura </td>
-                                    <td id="third_winner" class="placement-col"> &nbsp Jonas </td>
-                              </tr>
-                        </table>
-                  </div>
-            </passage>
 
             <h2>
                   <img id="podium-icon" src="../res/img/podium_icon.svg" alt="Home Icon" />
@@ -291,7 +272,8 @@
 
 
             <passage id=podium-section>
-                  <h2 class="podium"> <img src="../res/img/podium_icon.svg" alt="Home Icon" /> Podium </h2>
+                  <h2 class="podium" id="podium-head"> <img src="../res/img/podium_icon.svg" alt="Home Icon" /> Podium
+                  </h2>
                   <!-- podium for the winners of the tournament -->
                   <div class="podium" id="description-div">
                         <table id="podium-table">
