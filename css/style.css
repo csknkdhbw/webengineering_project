@@ -70,7 +70,6 @@ main content sections layout
 */
 
 h2 {
-    color: white;
     font-size: 1.4em;
     margin-left: 10%;
     margin-top: 70px;
@@ -98,10 +97,14 @@ h2 + div {
     margin-top: 25px;
     margin-bottom: 70px;
 
-    color: white;
-
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
+}
+
+#mode-switch-button {
+    padding: 7px;
+    border: 2px solid #1F1F1F;
+    border-radius: 20%;
 }

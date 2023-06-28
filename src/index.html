@@ -7,19 +7,25 @@
       <!-- using the UTF-8 character encoding -->
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
       <!-- page title -->
-      <title> Tischtennis Turnier </title>
+      <title> Tischtennis Meisterschaft 2023 </title>
       <!-- CSS stylesheet reference -->
       <link rel="stylesheet" href="../css/style.css" />
       <!-- CSS stylesheet for the main page (index.html) header -->
       <link rel="stylesheet" href="../css/main-header-style.css" />
+
+      <!-- include the external JavaScript file -->
+      <script type="text/javascript" src="../src/script.js"></script>
 </head>
 
 <body>
       <!-- header with background video and main navigation bar -->
       <header>
-            <video id="background-video" src="../res/video/background_video.mp4" autoplay muted loop></video>
-            <div id="title">
+            <!-- background video -->
+            <video id="bg-video" src="../res/video/background_video.mp4" autoplay muted loop></video>
+
+            <div id="header-title">
                   <h1> TISCHTENNIS MEISTERSCHAFT </h1>
                   <h1> → &nbsp; 2023 &nbsp; ← </h1>
             </div>
@@ -27,33 +33,70 @@
             <nav id="navbar">
                   <!-- main navigation menu -->
                   <ul class="menu">
-                        <li><a href="#description"> <span class="icon"><img src="../res/img/description_icon.svg"
-                                                alt="Home Icon" /></span> Beschreibung </a>
+                        <li>
+                              <a href="#description">
+                                    <img class="icon" src="../res/img/description_icon.svg" alt="Home Icon" />
+                                    Beschreibung
+                              </a>
                         </li>
-                        <li><a href="#requirements"> <span class="icon"><img src="../res/img/requirements_icon.svg"
-                                                alt="Home Icon" /></span> Anforderungen </a>
+
+                        <li>
+                              <a href="#requirements">
+                                    <img class="icon" src="../res/img/requirements_icon.svg" alt="Home Icon" />
+                                    Anforderungen
+                              </a>
                         </li>
-                        <li><a href="#registration"> <span class="icon"><img src="../res/img/registration_icon.svg"
-                                                alt="Home Icon" /></span> Anmeldung </a></li>
-                        <li><a href="#tournament-process"> <span class="icon"><img
-                                                src="../res/img/tournament_process_icon.svg" alt="Home Icon" /></span>
-                                    Turnierablauf </a>
+
+                        <li>
+                              <a href="#registration">
+                                    <img class="icon" src="../res/img/registration_icon.svg" alt="Home Icon" />
+                                    Anmeldung
+                              </a>
                         </li>
-                        <li><a href="#podium"> <span class="icon"><img src="../res/img/podium_icon.svg"
-                                                alt="Home Icon" /></span> Siegerpodium </a>
+
+                        <li>
+                              <a href="#tournament-process">
+                                    <img class="icon" src="../res/img/tournament_process_icon.svg" alt="Home Icon" />
+                                    Turnierablauf
+                              </a>
                         </li>
-                        <li><a href="#imprint"> <span class="icon"><img src="../res/img/imprint_icon.svg"
-                                                alt="Home Icon" /></span> Impressum </a></li>
+
+                        <li>
+                              <a href="#podium">
+                                    <img class="icon" src="../res/img/podium_icon.svg" alt="Home Icon" />
+                                    Siegerpodium
+                              </a>
+                        </li>
+
+                        <li>
+                              <a href="#imprint">
+                                    <img class="icon" src="../res/img/imprint_icon.svg" alt="Home Icon" />
+                                    Impressum
+                              </a>
+                        </li>
                   </ul>
             </nav>
       </header>
 
-      <!-- autoplaying .mp3 of a pingpong ball: Autoplay isn't working in Edge -->
-      <audio controls loop autoplay src="../res/audio/tabletennis-sample.mp3"></audio>
+      <main id="main-section">
+            <!-- autoplaying .mp3 of a pingpong ball: Autoplay isn't working in Edge -->
+            <audio controls loop autoplay src="../res/audio/tabletennis-sample.mp3"> </audio>
 
-      <main>
+            <!-- button for switching the view mode (DARK/WHITE) -->
+            <button id="mode-switch-button" type="button" style="background: none; border: none;" 
+                        onclick="switchMode()" 
+                        onmouseover="hoverModeButton()" 
+                        onmouseleave="leaveModeButton()">
+
+                  <img id="mode-switch-icon" src="../res/img/mode_white.svg" />
+            </button>
+
             <!-- small description about the tournament -->
-            <h2> <img src="../res/img/description_icon.svg" alt="Home Icon" /> Beschreibung </h2>
+            <h2>
+                  <img id="description-icon" src="../res/img/description_icon.svg" alt="Home Icon" />
+                  Beschreibung
+            </h2>
+
             <div id="description">
                   <article>
                         Das große Tischtennis Turnier namens "Tischtennis Meisterschaft 2023" versammelte acht
@@ -73,7 +116,10 @@
                   </article>
             </div>
 
-            <h2> <img src="../res/img/requirements_icon.svg" alt="Home Icon" /> Anforderungen </h2>
+            <h2>
+                  <img id="requirements-icon" src="../res/img/requirements_icon.svg" alt="Home Icon" />
+                  Anforderungen
+            </h2>
             <!-- defines the requirements for the participants of the tournament -->
             <div id="requirements">
                   <section>
@@ -86,7 +132,11 @@
                   </section>
             </div>
 
-            <h2> <img src="../res/img/registration_icon.svg" alt="Home Icon" /> Anmeldung (+Regeln) </h2>
+            <h2>
+                  <img id="registration-icon" src="../res/img/registration_icon.svg" alt="Home Icon" />
+                  Anmeldung (+Regeln)
+            </h2>
+
             <!-- defines the registration process for the tournament -->
             <div id="registration">
                   <p> Nachfolgend sind die <b> Schritte zur Anmeldung </b> aufgeführt: </p>
@@ -110,7 +160,11 @@
                   </div>
             </div>
 
-            <h2> <img src="../res/img/tournament_process_icon.svg" alt="Home Icon" /> Turnierablauf </h2>
+            <h2>
+                  <img id="tournament-process-icon" src="../res/img/tournament_process_icon.svg" alt="Home Icon" />
+                  Turnierablauf
+            </h2>
+
             <!-- provides the tournament tree with all the participants -->
             <div id="tournament-process">
                   <!-- tournament tree implemented as a table -->
@@ -190,7 +244,11 @@
                   <a href="large-tournaments-info.html"> Hinweis für größere Turniere </a>
             </div>
 
-            <h2> <img src="../res/img/podium_icon.svg" alt="Home Icon" /> Podium </h2>
+            <h2>
+                  <img id="podium-icon" src="../res/img/podium_icon.svg" alt="Home Icon" />
+                  Podium
+            </h2>
+
             <!-- podium for the winners of the tournament -->
             <div id="podium">
                   <table id="podium-table">
