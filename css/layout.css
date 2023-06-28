@@ -75,20 +75,17 @@ footer{
     
     
     footer{
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 4fr 1fr 1fr;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
     }
     address{
-        grid-column: -1/-1;
-        grid-row: 1/1;
+        grid-column: 1/2;
+        grid-row: 1;
     }
-    #nav-bar-icons{
-        grid-column: 1/1;
-        grid-row: 2/2;
-    }
-    #disclaimer{
-        grid-column: 1/1;
-        grid-column: 3/3;
+    #legal-docs{
+        grid-column: 2/3;
+        grid-row: 1;
     }
     
 }
@@ -129,20 +126,17 @@ footer{
     
     /*seperate Footer grid-Layout*/
     footer{
-        grid-template-columns: 2fr;
-        grid-template-rows: 4fr 1fr 1fr;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
     }
     address{
-        grid-column: -1;
+        grid-column: 1;
         grid-row: 1;
     }
-    #nav-bar-icons{
-        grid-column: 1;
-        grid-row: 2;
-    }
-    #disclaimer{
-        grid-column: 1;
-        grid-column: 3;
+    #legal-docs{
+        grid-column: 2;
+        grid-row: 1;
     }
 } 
 @media (min-width: 300px) and (max-width: 600px){
@@ -179,20 +173,17 @@ footer{
     
     /*seperate Footer grid-Layout*/
     footer{
-        grid-template-columns: 2fr;
-        grid-template-rows: 4fr 1fr 1fr;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
     }
     address{
-        grid-column: -1;
+        grid-column: 1;
         grid-row: 1;
     }
-    #nav-bar-icons{
-        grid-column: 1;
-        grid-row: 2;
-    }
-    #disclaimer{
-        grid-column: 1;
-        grid-column: 3;
+    #legal-docs{
+        grid-column: 2;
+        grid-row: 1;
     }
 } 
 @media only screen and (min-width: 300px) and (max-width: 600px){
@@ -230,20 +221,16 @@ footer{
     
     footer{
         display:grid;
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 4fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
     }
     address{
-        grid-column: -1/-1;
-        grid-row: 1/1;
+        grid-column: 1;
+        grid-row: 1;
     }
-    #nav-bar-icons{
-        grid-column: 1/1;
-        grid-row: 2/2;
-    }
-    #disclaimer{
-        grid-column: 1/1;
-        grid-column: 3/3;
+    #legal-docs{
+        grid-column: 2;
+        grid-row: 1;
     }
 } 
 
