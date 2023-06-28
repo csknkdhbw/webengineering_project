@@ -18,7 +18,7 @@
 .history-pages-nav li {
     display: flex;
 }
-.history-pages-nav li a{
+.history-pages-nav li a {
     display: flex;
     text-decoration: none;
     border: 2px solid white;
@@ -31,13 +31,15 @@
     justify-content: center;
 }
 
-main{
+main {
     display:grid;
 }
-footer{
+
+footer {
     display:grid;
 }
-/*Grid-layout for screen> 600px*/
+
+/*Grid-layout for screen > 600px*/
 @media (min-width: 600px){
     main{
         grid-template-columns: 2fr 1fr;
@@ -49,6 +51,7 @@ footer{
         grid-column: 1/-1;
         grid-row: 1;
     }
+
     #requirements-section{
         grid-column: 1/-1;
         grid-row: 2;
@@ -58,15 +61,19 @@ footer{
         grid-column: 1/-1;
         grid-row: 3;
     }
+
     #tournament-section{
         grid-column: 1;
         grid-row: 4/6;
         justify-content: end;
+        margin-right: 10%;
     }
+
     #podium-section{
         grid-column: 2;
         grid-row: 5;
     }
+    
     #history-section{
         grid-column: 2;
         grid-row: 4;
@@ -74,14 +81,16 @@ footer{
     }
     
     
-    footer{
+    footer {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 4fr 1fr 1fr;
     }
+
     address{
         grid-column: -1/-1;
         grid-row: 1/1;
     }
+
     #nav-bar-icons{
         grid-column: 1/1;
         grid-row: 2/2;
