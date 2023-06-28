@@ -28,12 +28,23 @@ table,
 td,
 tr {
     border-style: solid;
-    border-color: #d4d4d4;
     border-width: 1px 1px 1px 1px;
     border-radius: 5%;
     background-color: #2e2e2e;
 
     padding: 15px;
+}
+
+#participants-table{
+
+    background-color: #2e2e2e;
+    border-color: #d4d4d4;
+    border-radius: 3%;
+}
+
+#impressum{
+
+    border-radius: 3%;
 }
 
 tbody td,
@@ -43,18 +54,49 @@ tbody tr {
 }
 
 
+#podium-table{
+    color: #1F1F1F;
+    border: none;
+    font-family: Geneva, Tahoma, sans-serif;
+    font-style:inherit;
+    text-decoration-style:solid;
+    table-layout:auto;
+    
+}
+
 #first_winner {
     background-color: gold;
+    max-height: 4cm;
+    padding-left:3mm;
+    padding-right:7mm;
+    text-align:center;
+
 
 }
 
 #second_winner {
     background-color: silver;
-
+    padding-bottom: 3mm;
+    height: 3cm;
+    border-left: none;
+    border-right:none;
+    text-align:center;
+    padding-right: 5mm;
+    border-bottom:none;
+    padding-top:none;
+    
 }
 
 #third_winner {
+    border-color: none;
     background-color: #bf8970;
+    padding-bottom: 3mm;
+    border-left: none;
+    height: 2cm;
+    text-align:center;
+    padding-top: none;
+    padding-right: 5mm;
+    border-bottom:none;
 }
 
 .removed-cell {
@@ -104,6 +146,6 @@ h2 + div {
 }
 
 
-
-
-
+.placement-col {
+    padding-bottom: 4cm;
+}
