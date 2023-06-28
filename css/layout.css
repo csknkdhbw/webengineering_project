@@ -1,0 +1,252 @@
+/*An extention file for css related to the Layout (flex-/gridbox)*/
+/*--------------------------------------------------------------*/
+
+/*History pages as a flexbox*/
+.history-pages{
+    display:flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+.history-pages-nav {
+    display: flex;
+    flex: 1;
+    gap: 0.5em;
+    align-items: center;
+    flex-direction: column;
+}
+.history-pages-nav li {
+    display: flex;
+}
+.history-pages-nav li a{
+    display: flex;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 5px;
+    width: 180px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+main{
+    display:grid;
+}
+footer{
+    display:grid;
+}
+/*Grid-layout for screen> 600px*/
+@media (min-width: 600px){
+    main{
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto auto 1fr auto;
+        gap: 1px;
+    }
+    
+    #description-section{
+        grid-column: 1/-1;
+        grid-row: 1;
+    }
+    #requirements-section{
+        grid-column: 1/-1;
+        grid-row: 2;
+    }
+    
+    #registration-section {
+        grid-column: 1/-1;
+        grid-row: 3;
+    }
+    #tournament-section{
+        grid-column: 1;
+        grid-row: 4/6;
+        justify-content: end;
+    }
+    #podium-section{
+        grid-column: 2;
+        grid-row: 5;
+    }
+    #history-section{
+        grid-column: 2;
+        grid-row: 4;
+        
+    }
+    
+    
+    footer{
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 4fr 1fr 1fr;
+    }
+    address{
+        grid-column: -1/-1;
+        grid-row: 1/1;
+    }
+    #nav-bar-icons{
+        grid-column: 1/1;
+        grid-row: 2/2;
+    }
+    #disclaimer{
+        grid-column: 1/1;
+        grid-column: 3/3;
+    }
+    
+}
+
+
+/*Gridlayout*/
+@media (max-width: 300px){
+    main{
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        
+    }
+    
+    #description-section{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #requirements-section{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #registration-section {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    #tournament-section{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    #podium-section{
+        grid-column: 2;
+        grid-row: 5;
+    }
+    #history-section{
+        grid-column: 2;
+        grid-row: 6;
+    }
+    
+    /*seperate Footer grid-Layout*/
+    footer{
+        grid-template-columns: 2fr;
+        grid-template-rows: 4fr 1fr 1fr;
+    }
+    address{
+        grid-column: -1;
+        grid-row: 1;
+    }
+    #nav-bar-icons{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #disclaimer{
+        grid-column: 1;
+        grid-column: 3;
+    }
+} 
+@media (min-width: 300px) and (max-width: 600px){
+    main{ 
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        
+    }
+    
+    #description-section{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    #requirements-section{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #registration-section {
+        grid-column: 1;
+        grid-row: 3;
+    }
+    #tournament-section{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    #podium-section{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    #history-section{
+        grid-column: 1;
+        grid-row: 6;
+    }
+    
+    /*seperate Footer grid-Layout*/
+    footer{
+        grid-template-columns: 2fr;
+        grid-template-rows: 4fr 1fr 1fr;
+    }
+    address{
+        grid-column: -1;
+        grid-row: 1;
+    }
+    #nav-bar-icons{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #disclaimer{
+        grid-column: 1;
+        grid-column: 3;
+    }
+} 
+@media only screen and (min-width: 300px) and (max-width: 600px){
+    main{
+        display: grid;
+        grid-template-columns: auto 1fr;
+        grid-template-rows: auto auto auto 1fr auto;
+    }
+    
+    #description-section{
+        grid-column: 1/-1;
+        grid-row: 1;
+    }
+    #requirements-section{
+        grid-column: 1/-1;
+        grid-row: 2;
+    }
+    #registration-section {
+        grid-column: 1/-1;
+        grid-row: 3;
+    }
+    #tournament-section{
+        grid-column: 1;
+        grid-row: 4/6;
+    }
+    #podium-section{
+        grid-column: 2;
+        grid-row: 4;
+    }
+    #history-section{
+        grid-column: 2;
+        grid-row: 5;
+    }
+    
+    
+    footer{
+        display:grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 4fr 1fr 1fr;
+    }
+    address{
+        grid-column: -1/-1;
+        grid-row: 1/1;
+    }
+    #nav-bar-icons{
+        grid-column: 1/1;
+        grid-row: 2/2;
+    }
+    #disclaimer{
+        grid-column: 1/1;
+        grid-column: 3/3;
+    }
+} 
+
+    
+
+

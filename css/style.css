@@ -28,42 +28,98 @@ table,
 td,
 tr {
     border-style: solid;
-    border-color: #d4d4d4;
     border-width: 1px 1px 1px 1px;
     border-radius: 5%;
-    background-color: #2e2e2e;
-
     padding: 15px;
+}
+
+#participants-table{
+
+    background-color: #2e2e2e;
+    border-color: #d4d4d4;
+    border-radius: 3%;
+}
+
+#impressum{
+
+    border-radius: 3%;
 }
 
 tbody td,
 tbody tr {
     border-width: 1px 1px 1px 3px;
-    /* border-left-color: rgb(38, 42, 63); */
 }
 
-#table-description {
-    /*TODO: Die Descriptions oben an den oberen zellen Border*/
+
+#podium-table{
+    color: #1F1F1F;
+    border: none;
+    font-family: Geneva, Tahoma, sans-serif;
+    font-style:inherit;
+    text-decoration-style:solid;
+    table-layout:auto;
 }
 
-#first_winner {
+#trophy{
+
+    top:auto;
+}
+
+#first-winner {
     background-color: gold;
+    max-height: 3cm;
+    text-align:center;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    border-radius: 5%;
+    max-width:1cm;
 
 }
 
-#second_winner {
+.podium-text{
+    margin-top: 0.3cm;
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+    gap: 2mm;
+
+}
+
+#second-winner {
     background-color: silver;
-
+    padding-bottom: 3mm;
+    height: 3cm;
+    border-left: none;
+    border-right:none;
+    text-align:end;
+    padding-right: 5mm;
+    border-bottom:none;
+    padding-top:none;
+    border-top-width: 1%;
+    padding-left: 7mm;
+    width: 1cm;
 }
 
-#third_winner {
+#third-winner {
+    border-color: none;
     background-color: #bf8970;
+    padding-bottom: 3mm;
+    border-left: none;
+    height: 2cm;
+    text-align:center;
+    padding-top: none;
+    padding-right: 5mm;
+    border-bottom:none;
+    border-top-width: 1cm;
+    width:1cm;
 }
 
 .removed-cell {
     border: none;
     background-color: #1F1F1F;
 }
+
 
 /*
 main content sections layout 
@@ -108,3 +164,10 @@ h2 + div {
     border: 2px solid #1F1F1F;
     border-radius: 20%;
 }
+
+.placement-col {
+
+    padding-bottom: 2cm;
+    padding-bottom: 4cm;
+}
+
