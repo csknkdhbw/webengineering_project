@@ -165,8 +165,13 @@ h2 + div {
     border-radius: 20%;
 }
 
-.placement-col {
+aside {
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
 
+.placement-col {
     padding-bottom: 2cm;
     padding-bottom: 4cm;
 }
