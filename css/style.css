@@ -30,8 +30,6 @@ tr {
     border-style: solid;
     border-width: 1px 1px 1px 1px;
     border-radius: 5%;
-    background-color: #2e2e2e;
-
     padding: 15px;
 }
 
@@ -64,30 +62,48 @@ tbody tr {
     
 }
 
-#first_winner {
-    background-color: gold;
-    max-height: 4cm;
-    padding-left:3mm;
-    padding-right:7mm;
-    text-align:center;
+#trophy{
 
+    top:auto;
+}
+
+#first-winner {
+    background-color: gold;
+    max-height: 3cm;
+    text-align:center;
+    padding-left: 1cm;
+    padding-right: 1cm;
+    border-radius: 5%;
+    max-width:1cm;
 
 }
 
-#second_winner {
+.podium-text{
+    margin-top: 0.3cm;
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+    justify-content: center;
+    gap: 2mm;
+
+}
+
+#second-winner {
     background-color: silver;
     padding-bottom: 3mm;
     height: 3cm;
     border-left: none;
     border-right:none;
-    text-align:center;
+    text-align:end;
     padding-right: 5mm;
     border-bottom:none;
     padding-top:none;
-    
+    border-top-width: 1%;
+    padding-left: 7mm;
+    width: 1cm;
 }
 
-#third_winner {
+#third-winner {
     border-color: none;
     background-color: #bf8970;
     padding-bottom: 3mm;
@@ -97,12 +113,15 @@ tbody tr {
     padding-top: none;
     padding-right: 5mm;
     border-bottom:none;
+    border-top-width: 1cm;
+    width:1cm;
 }
 
 .removed-cell {
     border: none;
     background-color: #1F1F1F;
 }
+
 
 /*
 main content sections layout 
@@ -147,5 +166,8 @@ h2 + div {
 
 
 .placement-col {
+
+    padding-bottom: 2cm;
     padding-bottom: 4cm;
 }
+
