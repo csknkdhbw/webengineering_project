@@ -24,6 +24,7 @@ function switchMode() {
             document.getElementById("registration-icon").src = "../res/img/registration_icon_black.svg";
             document.getElementById("tournament-process-icon").src = "../res/img/tournament_process_icon_black.svg";
             document.getElementById("podium-icon").src = "../res/img/podium_icon_black.svg";
+            document.getElementById("history-icon").src = "../res/img/history_icon_black.svg";
 
             // change text color of links
             const link_elements = document.querySelectorAll("main a");
@@ -32,7 +33,11 @@ function switchMode() {
                   link_elements[i].style.borderColor = "#1F1F1F";
             }
 
-            // change table background color and text color
+            // change table background color
+            const table_elements = document.getElementsByTagName("table");
+            for (let i = 0; i < table_elements.length; i++) {
+                  table_elements[i].style.backgroundColor = "white";
+            }
 
             // change mode button icon
             document.getElementById("mode-switch-icon").src = "../res/img/mode_black.svg";
@@ -58,12 +63,19 @@ function switchMode() {
             document.getElementById("registration-icon").src = "../res/img/registration_icon.svg";
             document.getElementById("tournament-process-icon").src = "../res/img/tournament_process_icon.svg";
             document.getElementById("podium-icon").src = "../res/img/podium_icon.svg";
+            document.getElementById("history-icon").src = "../res/img/history_icon.svg";
 
             // change text color of links
             const link_elements = document.querySelectorAll("main a");
             for (let i = 0; i < link_elements.length; i++) {
                   link_elements[i].style.color = "white";
                   link_elements[i].style.borderColor = "white";
+            }
+
+            // change table background color
+            const table_elements = document.getElementsByTagName("table");
+            for (let i = 0; i < table_elements.length; i++) {
+                  table_elements[i].style.backgroundColor = "#1F1F1F";
             }
 
             // change mode button icon
