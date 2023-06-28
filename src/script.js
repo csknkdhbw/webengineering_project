@@ -29,7 +29,10 @@ function switchMode() {
             const link_elements = document.querySelectorAll("main a");
             for (let i = 0; i < link_elements.length; i++) {
                   link_elements[i].style.color = "#1F1F1F";
+                  link_elements[i].style.borderColor = "#1F1F1F";
             }
+
+            // change table background color and text color
 
             // change mode button icon
             document.getElementById("mode-switch-icon").src = "../res/img/mode_black.svg";
@@ -60,6 +63,7 @@ function switchMode() {
             const link_elements = document.querySelectorAll("main a");
             for (let i = 0; i < link_elements.length; i++) {
                   link_elements[i].style.color = "white";
+                  link_elements[i].style.borderColor = "white";
             }
 
             // change mode button icon
