@@ -149,7 +149,7 @@ footer{
     main{ 
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto auto;
-        background-color: green;
+        
     }
     
     #description-section{
