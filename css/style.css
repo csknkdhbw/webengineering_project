@@ -170,4 +170,8 @@ h2 + div {
     padding-bottom: 2cm;
     padding-bottom: 4cm;
 }
+#participant-list{
+    display:flex;
+    justify-content: center;
+}
 

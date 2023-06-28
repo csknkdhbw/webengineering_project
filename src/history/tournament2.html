@@ -9,111 +9,141 @@
       <!-- page title -->
       <title> Vergangenes Tunier: 2021 </title>
       <!-- CSS stylesheet reference -->
-      <link rel="stylesheet" href="../../css/style.css"/>
+      <link rel="stylesheet" href="../../css/style.css" />
+      <link rel="stylesheet" href="../../css/subpage-style.css" />
 </head>
 
 <body>
-    <header>
-        <h1>Tunier 2021</h1>
-        <h3>Tunier Nr 3 am <time datetime="2021-05-26">26.05.2021</time> in Hamburg</h3>
-    </header>
+      <header>
+            <h1>Tunier 2021</h1>
+            <h3>Tunier Nr 3 am <time datetime="2021-05-26">26.05.2021</time> in Hamburg</h3>
+      </header>
 
       <main>
             <!--Tournament participant-list-->
-            <p>Teilnehmerliste des Tuniers:</p>
-            <ol>
-                <li>Sumaya Bates</li>
-                <li>Jorge Boyer</li>
-                <li>Jada Dixon</li>
-                <li>Alisa Wilcox</li>
-                <li>Ammar Mays</li>
-                <li>Savannah Bonner</li>
-                <li>Donald Tucker</li>
-                <li>Flynn Castaneda</li>
-            </ol>
+            <h2>Teilnehmerliste des Tuniers:</h2>
+            <div id="participants-list">
+                  <ol>
+                        <li>Sumaya Bates</li>
+                        <li>Jorge Boyer</li>
+                        <li>Jada Dixon</li>
+                        <li>Alisa Wilcox</li>
+                        <li>Ammar Mays</li>
+                        <li>Savannah Bonner</li>
+                        <li>Donald Tucker</li>
+                        <li>Flynn Castaneda</li>
+                  </ol>
+            </div>
             <!-- large tournament tree implemented as a table -->
+            <h2>Turnierablauf</h2>
+
             <div>
-                <!-- tournament tree implemented as a table -->
-                <div>
-                    <!-- tournament tree implemented as a table -->
-                    <table id="participants-table">
-                          <thead>
-                                <tr>
-                                      <th colspan="4"> Ablauf des Turniers </th>
-                                </tr>
-                          </thead>
-    
-                          <tbody>
-                                <!-- first row -->
-                                <tr>
-                                      
-                                      <td > Viertelfinale 1: <b>0:11</b> 
-                                            <hr/><em class="loser">Flynn Castaneda</em> vs <em class="winner">Donald Tucker</em>
-                                      </td>
-                                      <td rowspan="2">Halbfinale 1: <b>11:0</b>
-                                            <hr/><em class="winner">Donald Tucker</em> vs <em class="loser">Savannah Bonner</em> </td>
-                                      <td rowspan="4">Finale: <b>11:1</b>
-                                            <hr/><em class="winner">Donald Tucker</em> vs <em class="loser">Jorge Boyer</em></td>
-                                </tr>
-    
-                                <!-- second row -->
-                                <tr>
-                                      
-                                      <td >Viertelfinale 2: <b>11:4</b>
-                                            <hr/><em class="winner">Savannah Bonner</em> vs <em class="loser">Ammar Mays</em> </td>
-                                </tr>
-                                <!-- third row -->
-                                <tr>
-                                      
-                                      <td >Viertelfinale 3: <b>3:11</b>
-                                            <hr/><em class="loser">Alisa Wilcox</em> vs <em class="winner">Jada Dixon</em>
-                                      <td rowspan="2"><br/>Halbfinale 2: <b>11:4</b>
-                                            <hr/><em class="winner">Jorge Boyer</em> vs <em class="loser">Jada Dixon</em>
-                                </tr>
-                                <!-- fourth row -->
-                                <tr>
-                                      <td >Viertelfinale 4: <b>11:9</b>
-                                            <hr/><em class="winner">Jorge Boyer</em> vs <em class="loser">Sumaya Bates</em>
-                                </tr>
-                          </tbody>
-    
-                          <tfoot>
-                                
-                                <tr>
-                                      <th colspan="4"></th>
-                                </tr>
-                          </tfoot>
+                  <!-- tournament tree implemented as a table -->
+                  <table id="participants-table">
+                        <thead>
+                              <tr>
+                                    <th colspan="4"> Ablauf des Turniers </th>
+                              </tr>
+                        </thead>
 
-            <hr />
+                        <tbody>
+                              <!-- first row -->
+                              <tr>
+
+                                    <td> Viertelfinale 1: <b>0:11</b>
+                                          <hr /><em class="loser">Flynn Castaneda</em> vs <em class="winner">Donald
+                                                Tucker</em>
+                                    </td>
+                                    <td rowspan="2">Halbfinale 1: <b>11:0</b>
+                                          <hr /><em class="winner">Donald Tucker</em> vs <em class="loser">Savannah
+                                                Bonner</em>
+                                    </td>
+                                    <td rowspan="4">Finale: <b>11:1</b>
+                                          <hr /><em class="winner">Donald Tucker</em> vs <em class="loser">Jorge
+                                                Boyer</em>
+                                    </td>
+                              </tr>
+
+                              <!-- second row -->
+                              <tr>
+
+                                    <td>Viertelfinale 2: <b>11:4</b>
+                                          <hr /><em class="winner">Savannah Bonner</em> vs <em class="loser">Ammar
+                                                Mays</em>
+                                    </td>
+                              </tr>
+                              <!-- third row -->
+                              <tr>
+
+                                    <td>Viertelfinale 3: <b>3:11</b>
+                                          <hr /><em class="loser">Alisa Wilcox</em> vs <em class="winner">Jada
+                                                Dixon</em>
+                                    <td rowspan="2"><br />Halbfinale 2: <b>11:4</b>
+                                          <hr /><em class="winner">Jorge Boyer</em> vs <em class="loser">Jada
+                                                Dixon</em>
+                              </tr>
+                              <!-- fourth row -->
+                              <tr>
+                                    <td>Viertelfinale 4: <b>11:9</b>
+                                          <hr /><em class="winner">Jorge Boyer</em> vs <em class="loser">Sumaya
+                                                Bates</em>
+                              </tr>
+                        </tbody>
+
+                        <tfoot>
+
+                              <tr>
+                                    <th colspan="4"></th>
+                              </tr>
+                        </tfoot>
+                  </table>
+            </div>
+
+
             <!-- podium for the winners of the tournament -->
-            <div id="podium">
-                <table id="podium-table">
-                      <!-- first row -->
-                      <tr>
-                            <td class = "removed-cell"> </td>
-                            <th colspan="3" rowspan="3" id = "first_winner" class="placement-col"> (1) Donald Tucker </th>
-                            <td class = "removed-cell"> </td>
-                      </tr>
-                      <!-- second row -->
-                      <tr>
-                            <td id="second_winner" class="placement-col"> (2) Jorge Boyer </td>
-                            <td class = "removed-cell" > </td>
-                            <td id="third_winner" class="placement-col"> (3) Jada Dixon </td>
-                      </tr>
-                </table>
-          </div>
+            <h2>Gewinner des Turniers</h2>
+            <div class="podium" id="description-div">
+                  <table id="podium-table">
+                        <!-- first row -->
+                        <tr>
+                              <td class="removed-cell"> </td>
+                              <th colspan="3" rowspan="3" id="first-winner" class="placement-col">
+                                    <section class="podium-text">
+                                          <img id="trophy" src="../../res/img/trophy_icon.svg" alt="trophy_icon">
+                                          <b> Donald Tucker</b>
+                                    </section>
+                              <td class="removed-cell"> </td>
+                        </tr>
+                        <!-- second row -->
+                        <tr>
+                              <td id="second-winner" class="placement-col">
+                                    <section class="podium-text">
+                                          <img id="trophy" src="../../res/img/trophy_icon.svg" alt="trophy_icon">
+                                          <b> Jorge Boyer</b>
+                                    </section>
+                              </td>
+                              <td id="third-winner" class="placement-col">
+                                    <section class="podium-text">
+                                          <img id="trophy" src="../../res/img/trophy_icon.svg" alt="trophy_icon">
+                                          <b> Jada Dixon</b>
+                                    </section>
+                              </td>
+                        </tr>
+                  </table>
+            </div>
       </main>
-      
+
       <footer>
-            <!-- link back to the main page -->
-            <a href="../index.html"> Zurück zur Hauptseite </a>
-
-            <br />
-
-            <!-- link to the information about small tournaments -->
-            <a href="../history/tournament1.html"> Tunier 2022 </a><br />
-            <a href="../history/tournament3.html"> Tunier 2019 </a><br />
-            <a href="../history/tournament4.html"> Tunier 2018 </a><br />
+            <h2 class="subpages">Vergangene Turniere</h2>
+            <div class="subpages" id="subpages-div">
+                  <!-- navigationbar for all past tournaments -->
+                  <ul class="subpages-nav">
+                        <li><a href="../index.html">Hauptseite</a></li>
+                        <li><a href="../history/tournament1.html">Tunier 2022</a></li>
+                        <li><a href="../history/tournament3.html">Tunier 2019</a></li>
+                        <li><a href="../history/tournament4.html">Tunier 2018</a></li>
+                  </ul>
+            </div>
       </footer>
 </body>
 
