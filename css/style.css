@@ -29,12 +29,10 @@ td,
 tr {
     border-style: solid;
     border-width: 1px 1px 1px 1px;
-<<<<<<< Updated upstream
     border-radius: 5%;
     background-color: #2e2e2e;
 
     padding: 15px;
-=======
 }
 
 #participants-table{
@@ -47,7 +45,6 @@ tr {
 #impressum{
 
     border-radius: 3%;
->>>>>>> Stashed changes
 }
 
 tbody td,
@@ -56,9 +53,6 @@ tbody tr {
     /* border-left-color: rgb(38, 42, 63); */
 }
 
-#table-description {
-    /*TODO: Die Descriptions oben an den oberen zellen Border*/
-}
 
 #podium-table{
     color: #1F1F1F;
@@ -108,7 +102,6 @@ tbody tr {
 .removed-cell {
     border: none;
     background-color: #1F1F1F;
-<<<<<<< Updated upstream
 }
 
 /*
@@ -150,15 +143,9 @@ h2 + div {
     padding-bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
-=======
-    
-    
 }
 
 
 .placement-col {
-
-padding-bottom: 4cm;
-
->>>>>>> Stashed changes
+    padding-bottom: 4cm;
 }
