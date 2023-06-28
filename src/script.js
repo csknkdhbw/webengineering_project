@@ -25,6 +25,12 @@ function switchMode() {
             document.getElementById("tournament-process-icon").src = "../res/img/tournament_process_icon_black.svg";
             document.getElementById("podium-icon").src = "../res/img/podium_icon_black.svg";
 
+            // change text color of links
+            const link_elements = document.querySelectorAll("main a");
+            for (let i = 0; i < link_elements.length; i++) {
+                  link_elements[i].style.color = "#1F1F1F";
+            }
+
             // change mode button icon
             document.getElementById("mode-switch-icon").src = "../res/img/mode_black.svg";
 
@@ -49,6 +55,12 @@ function switchMode() {
             document.getElementById("registration-icon").src = "../res/img/registration_icon.svg";
             document.getElementById("tournament-process-icon").src = "../res/img/tournament_process_icon.svg";
             document.getElementById("podium-icon").src = "../res/img/podium_icon.svg";
+
+            // change text color of links
+            const link_elements = document.querySelectorAll("main a");
+            for (let i = 0; i < link_elements.length; i++) {
+                  link_elements[i].style.color = "white";
+            }
 
             // change mode button icon
             document.getElementById("mode-switch-icon").src = "../res/img/mode_white.svg";
