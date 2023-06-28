@@ -126,7 +126,6 @@ main content sections layout
 */
 
 h2 {
-    color: white;
     font-size: 1.4em;
     margin-left: 10%;
     margin-top: 70px;
@@ -152,9 +151,7 @@ h2 + div {
     margin-left: 8%;
     margin-right: 8%;
     margin-top: 25px;
-    margin-bottom: none;
-
-    color: white;
+    margin-bottom: 70px;
 
     padding-top: 30px;
     padding-bottom: 30px;
@@ -162,6 +159,11 @@ h2 + div {
     padding-right: 30px;
 }
 
+#mode-switch-button {
+    padding: 7px;
+    border: 2px solid #1F1F1F;
+    border-radius: 20%;
+}
 
 .placement-col {
 
