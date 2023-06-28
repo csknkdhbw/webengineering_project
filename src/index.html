@@ -13,7 +13,9 @@
       <link rel="stylesheet" href="../css/style.css" />
       <!-- CSS stylesheet for the main page (index.html) header -->
       <link rel="stylesheet" href="../css/main-header-style.css" />
-      
+      <!-- CSS stylesheet for Layout -->
+      <link rel="stylesheet" href="../css/layout.css" />
+
 </head>
 
 <body>
@@ -54,8 +56,9 @@
 
       <main>
             <!-- small description about the tournament -->
-            <h2> <img src="../res/img/description_icon.svg" alt="Home Icon" /> Beschreibung </h2>
-            <div id="description">
+            <passage id = "description-section">
+            <h2 class="description"> <img src="../res/img/description_icon.svg" alt="Home Icon" /> Beschreibung </h2>
+            <div class="description">
                   <article>
                         Das große Tischtennis Turnier namens "Tischtennis Meisterschaft 2023" versammelte acht
                         talentierte
@@ -73,10 +76,11 @@
                         Exzellenz.
                   </article>
             </div>
-
-            <h2> <img src="../res/img/requirements_icon.svg" alt="Home Icon" /> Anforderungen </h2>
+            </passage>
+            <passage id="requirements-section">
+            <h2 class="requirements"> <img src="../res/img/requirements_icon.svg" alt="Home Icon" /> Anforderungen </h2>
             <!-- defines the requirements for the participants of the tournament -->
-            <div id="requirements">
+            <div class="requirements">
                   <section>
                         <p> Folgende Dinge sind für die Teilnehmer des Turniers <em> unabdingbar: </em> </p>
                         <ul>
@@ -86,10 +90,11 @@
                         </ul>
                   </section>
             </div>
-
-            <h2> <img src="../res/img/registration_icon.svg" alt="Home Icon" /> Anmeldung (+Regeln) </h2>
+            </passage>
+            <passage id="registration-section">
+            <h2 class="registration"> <img src="../res/img/registration_icon.svg" alt="Home Icon" /> Anmeldung (+Regeln) </h2>
             <!-- defines the registration process for the tournament -->
-            <div id="registration">
+            <div class="registration">
                   <p> Nachfolgend sind die <b> Schritte zur Anmeldung </b> aufgeführt: </p>
                   <!-- registration steps as ordered list -->
                   <ol>
@@ -110,10 +115,11 @@
                         </a>
                   </div>
             </div>
-
-            <h2> <img src="../res/img/tournament_process_icon.svg" alt="Home Icon" /> Turnierablauf </h2>
+            </passage>
+            <passage id = "tournament-section>">
+            <h2 class="tournament-process"> <img src="../res/img/tournament_process_icon.svg" alt="Home Icon" /> Turnierablauf </h2>
             <!-- provides the tournament tree with all the participants -->
-            <div id="tournament-process">
+            <div class="tournament-process">
                   <!-- tournament tree implemented as a table -->
                   <table id="participants-table">
                         <thead>
@@ -190,10 +196,11 @@
                   <!-- link to another site with detailed information about large tournaments -->
                   <a href="large-tournaments-info.html"> Hinweis für größere Turniere </a>
             </div>
-
-            <h2> <img src="../res/img/podium_icon.svg" alt="Home Icon" /> Podium </h2>
+            </passage>
+            <passage id = podium-section>
+            <h2 class="podium"> <img src="../res/img/podium_icon.svg" alt="Home Icon" /> Podium </h2>
             <!-- podium for the winners of the tournament -->
-            <div id="podium">
+            <div class="podium">
                   <table id="podium-table">
                         <!-- first row -->
                         <tr>
@@ -220,8 +227,20 @@
                         </tr>
                   </table>
             </div>
-
-            <hr />
+            </passage>
+            
+            <passage id = "history-section">
+            <h2 class = "history-pages">Vergangene Turniere</h2>
+            <div class="history-pages">
+                  <!-- navigationbar for past tournaments -->
+                  <ul class = "history-pages-nav">
+                        <li><a href = "history/tournament1.html">Tunier 2022</a></li>
+                        <li><a href = "history/tournament2.html">Tunier 2021</a></li>
+                        <li><a href = "history/tournament3.html">Tunier 2019</a></li>
+                        <li><a href = "history/tournament4.html">Tunier 2018</a></li>
+                  </ul>
+            </div>
+            </passage>
       </main>
 
       <footer>

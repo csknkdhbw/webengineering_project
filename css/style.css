@@ -43,7 +43,6 @@ tr {
 #impressum{
 
     border-radius: 3%;
-    background-color: #2e2e2e;
 }
 
 tbody td,
@@ -52,9 +51,6 @@ tbody tr {
     /* border-left-color: rgb(38, 42, 63); */
 }
 
-#table-description {
-    /*TODO: Die Descriptions oben an den oberen zellen Border*/
-}
 
 #podium-table{
     color: #1F1F1F;
@@ -166,13 +162,12 @@ h2 + div {
     padding-bottom: 30px;
     padding-left: 30px;
     padding-right: 30px;
-    
-    
 }
 
 
 .placement-col {
 
-padding-bottom: 2cm;
-
+    padding-bottom: 2cm;
+    padding-bottom: 4cm;
 }
+
