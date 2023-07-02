@@ -167,9 +167,11 @@ h2>img {
 /*
 use the adjacent selector to design the sections following a title
 */
+
 h2+div {
     border-width: 0.2em;
     border-color: var(--default-border);
+
     border-style: solid;
     border-radius: 20px;
 
@@ -205,8 +207,11 @@ aside {
     justify-content: center;
 }
 
-footer {
-    background-color: pink;
+address, #legal-docs-div {
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 20px;
 }
 
 #tournament-section>div {
