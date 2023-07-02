@@ -23,9 +23,20 @@ body {
 
 main {
     width: 82%;
-    margin-left: 9%;
+    margin: 0px auto;
     padding-top: 3em;
     padding-bottom: 3em;
+}
+
+footer {
+    width: 82%;
+    margin: 0px auto;
+    background-color: gold;
+}
+
+#imprint {
+    width: 100%;
+    background-color: brown;
 }
 
 img {
@@ -70,7 +81,6 @@ tr {
 }
 
 #impressum {
-
     border-radius: 3%;
 }
 
@@ -84,7 +94,6 @@ tr {
 }
 
 #trophy {
-
     top: auto;
 }
 

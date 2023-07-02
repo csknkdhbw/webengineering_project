@@ -76,9 +76,7 @@ nav {
 */
 #menu li a:hover {
       font-weight: bold;
-      border-color: var(--default-border);
-      background-color: var(--default-background);
-      transform: translate(-5px, -10px);
+      transform: translate(-0px, -12px);
 }
 
 .icon {
@@ -111,8 +109,6 @@ adjust layout for viewport width under 600px
 
       #menu li a:hover {
             font-weight: bold;
-            border-color: var(--default-border);
-            background-color: var(--default-background);
             transform: none;
       }
 }

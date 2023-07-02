@@ -91,7 +91,6 @@ footer {
         grid-row: 5;
     }
 
-    
     footer {
         display:grid;
         grid-template-columns: 1fr 1fr;
