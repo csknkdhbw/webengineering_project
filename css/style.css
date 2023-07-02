@@ -2,8 +2,30 @@
 
 body {
     font-family: "Rubik", sans-serif;
+
+    /*
+        define the custom color palette used in our UI
+    */
+    --default-dark: #1c1c1c;
+    --default-border: #fde4c3;
+    --default-text: #f6f6f6;
+    --default-background: #1c1c1c;
+
+    /* white mode color palette */
+    --default-white: #f6f6f6;
+    --white-border: #1f1f1f;
+    --white-text: #1f1f1f;
+    --white-background: #f6f6f6;
+
     color: #d4d4d4;
-    background-color: #1F1F1F;
+    background-color: var(--default-dark);
+}
+
+main {
+    width: 82%;
+    margin-left: 9%;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 img {
@@ -13,7 +35,7 @@ img {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--default-text);
 }
 
 a:hover {
@@ -22,64 +44,65 @@ a:hover {
 
 table {
     margin: 0 auto;
+    border-spacing: 18px;
 }
 
-table,
 td,
 tr {
     border-style: solid;
-    border-width: 1px 1px 1px 1px;
+    border-width: 1px;
     border-radius: 5%;
     padding: 15px;
+    text-align: center;
 }
 
-#participants-table{
+.quarter-final-td {
+    border-radius: 25%;
+    padding: 25px;
+}
 
-    background-color: #2e2e2e;
-    border-color: #d4d4d4;
+.semi-final-td {
+    border-radius: 10%;
+}
+
+.final-td {
+    border-radius: 0%;
+}
+
+#impressum {
+
     border-radius: 3%;
 }
 
-#impressum{
-
-    border-radius: 3%;
-}
-
-tbody td,
-tbody tr {
-    border-width: 1px 1px 1px 3px;
-}
-
-
-#podium-table{
-    color: #1F1F1F;
+#podium-table {
+    color: var(--default-dark);
     border: none;
     font-family: Geneva, Tahoma, sans-serif;
-    font-style:inherit;
-    text-decoration-style:solid;
-    table-layout:auto;
+    font-style: inherit;
+    text-decoration-style: solid;
+    table-layout: auto;
 }
 
-#trophy{
+#trophy {
 
-    top:auto;
+    top: auto;
 }
 
 #first-winner {
     background-color: gold;
     max-height: 3cm;
-    text-align:center;
+    text-align: center;
     padding-left: 1cm;
     padding-right: 1cm;
     border-radius: 5%;
-    max-width:1cm;
+    max-width: 1cm;
 
 }
 
-.podium-text{
+.podium-text {
     margin-top: 0.3cm;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     gap: 2mm;
@@ -91,11 +114,11 @@ tbody tr {
     padding-bottom: 3mm;
     height: 3cm;
     border-left: none;
-    border-right:none;
-    text-align:end;
+    border-right: none;
+    text-align: end;
     padding-right: 5mm;
-    border-bottom:none;
-    padding-top:none;
+    border-bottom: none;
+    padding-top: none;
     border-top-width: 1%;
     padding-left: 7mm;
     width: 1cm;
@@ -107,76 +130,80 @@ tbody tr {
     padding-bottom: 3mm;
     border-left: none;
     height: 2cm;
-    text-align:center;
+    text-align: center;
     padding-top: none;
     padding-right: 5mm;
-    border-bottom:none;
+    border-bottom: none;
     border-top-width: 1cm;
-    width:1cm;
+    width: 1cm;
 }
 
 .removed-cell {
     border: none;
-    background-color: #1F1F1F;
+    background-color: var(--default-dark);
 }
 
 
 /*
-main content sections layout 
+main section layout 
 */
 
 h2 {
-    font-size: 1.4em;
-    margin-left: 10%;
-    margin-top: 70px;
+    font-size: 1.5em;
+    margin-top: 1em;
+    margin-bottom: 0%;
+    padding-bottom: 1em;
+    padding-left: 2.5em;
 }
 
 /*
 use the element-child selector to layout the icons of the titles
 */
-h2 > img {
+h2>img {
     vertical-align: middle;
-    padding-right: 10px;
+    margin-right: 0.5em;
 }
 
 /*
 use the adjacent selector to design the sections following a title
 */
-h2 + div{
-    border-width: 2px;
-    border-color: white;
+
+h2+div {
+    border-width: 0.2em;
+    border-color: var(--default-border);
+
     border-style: solid;
     border-radius: 20px;
 
-    margin-left: 8%;
-    margin-right: 8%;
-    margin-top: 25px;
-    margin-bottom: 70px;
+    margin-bottom: 7em;
 
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding: 2em;
+    background-color: var(--default-background);
 }
 
 #mode-switch-button {
     padding: 7px;
-    border: 2px solid #1F1F1F;
+    border: 2px solid var(--default-dark);
     border-radius: 20%;
 }
 
 aside {
     display: flex;
-    margin-top: 20px;
-    gap: 20px;
+    margin-top: 2.5em;
+    gap: 80%;
+    align-items: center;
+    width: 82%;
+    margin-left: 9%;
+    justify-content: center;
 }
 
 .placement-col {
     padding-bottom: 2cm;
     padding-bottom: 4cm;
 }
-#participant-list{
-    display:flex;
+
+#participant-list {
+    display: flex;
     justify-content: center;
 }
 
@@ -187,4 +214,26 @@ address, #legal-docs-div {
     border-radius: 20px;
 }
 
+#tournament-section>div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+#tournament-reference {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10%;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 25px;
+}
+
+#mode-switch-button {
+    background: none;
+    border: none;
+}
