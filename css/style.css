@@ -2,8 +2,23 @@
 
 body {
     font-family: "Rubik", sans-serif;
+
+    /*
+        define the custom color palette used in our UI
+    */
+    --default-dark: #1c1c1c;
+    --default-border: #fde4c3;
+    --default-text: #f6f6f6;
+    --default-background: #1c1c1c;
+
+    /* white mode color palette */
+    --default-white: #f6f6f6;
+    --white-border: #1f1f1f;
+    --white-text: #1f1f1f;
+    --white-background: #f6f6f6;
+
     color: #d4d4d4;
-    background-color: #1F1F1F;
+    background-color: var(--default-dark);
 }
 
 main {
@@ -20,7 +35,7 @@ img {
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--default-text);
 }
 
 a:hover {
@@ -54,40 +69,40 @@ tr {
     border-radius: 0%;
 }
 
-#impressum{
+#impressum {
 
     border-radius: 3%;
 }
 
-#podium-table{
-    color: #1F1F1F;
+#podium-table {
+    color: var(--default-dark);
     border: none;
     font-family: Geneva, Tahoma, sans-serif;
-    font-style:inherit;
-    text-decoration-style:solid;
-    table-layout:auto;
+    font-style: inherit;
+    text-decoration-style: solid;
+    table-layout: auto;
 }
 
-#trophy{
+#trophy {
 
-    top:auto;
+    top: auto;
 }
 
 #first-winner {
     background-color: gold;
     max-height: 3cm;
-    text-align:center;
+    text-align: center;
     padding-left: 1cm;
     padding-right: 1cm;
     border-radius: 5%;
-    max-width:1cm;
+    max-width: 1cm;
 
 }
 
-.podium-text{
+.podium-text {
     margin-top: 0.3cm;
-    display:flex;
-    flex-direction:column;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     justify-content: center;
     gap: 2mm;
@@ -99,11 +114,11 @@ tr {
     padding-bottom: 3mm;
     height: 3cm;
     border-left: none;
-    border-right:none;
-    text-align:end;
+    border-right: none;
+    text-align: end;
     padding-right: 5mm;
-    border-bottom:none;
-    padding-top:none;
+    border-bottom: none;
+    padding-top: none;
     border-top-width: 1%;
     padding-left: 7mm;
     width: 1cm;
@@ -115,17 +130,17 @@ tr {
     padding-bottom: 3mm;
     border-left: none;
     height: 2cm;
-    text-align:center;
+    text-align: center;
     padding-top: none;
     padding-right: 5mm;
-    border-bottom:none;
+    border-bottom: none;
     border-top-width: 1cm;
-    width:1cm;
+    width: 1cm;
 }
 
 .removed-cell {
     border: none;
-    background-color: #1F1F1F;
+    background-color: var(--default-dark);
 }
 
 
@@ -144,7 +159,7 @@ h2 {
 /*
 use the element-child selector to layout the icons of the titles
 */
-h2 > img {
+h2>img {
     vertical-align: middle;
     margin-right: 0.5em;
 }
@@ -152,27 +167,28 @@ h2 > img {
 /*
 use the adjacent selector to design the sections following a title
 */
-h2 + div {
-    border-width: 2px;
-    border-color: white;
+h2+div {
+    border-width: 0.2em;
+    border-color: var(--default-border);
     border-style: solid;
     border-radius: 20px;
 
     margin-bottom: 7em;
 
     padding: 2em;
+    background-color: var(--default-background);
 }
 
 #mode-switch-button {
     padding: 7px;
-    border: 2px solid #1F1F1F;
+    border: 2px solid var(--default-dark);
     border-radius: 20%;
 }
 
 aside {
     display: flex;
     margin-top: 2.5em;
-    gap: 80%; 
+    gap: 80%;
     align-items: center;
     width: 82%;
     margin-left: 9%;
@@ -183,8 +199,9 @@ aside {
     padding-bottom: 2cm;
     padding-bottom: 4cm;
 }
-#participant-list{
-    display:flex;
+
+#participant-list {
+    display: flex;
     justify-content: center;
 }
 
@@ -192,7 +209,7 @@ footer {
     background-color: pink;
 }
 
-#tournament-section > div {
+#tournament-section>div {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -211,6 +228,7 @@ footer {
     padding: 25px;
 }
 
-.history-link:hover {
-    font-weight: bold;
+#mode-switch-button {
+    background: none;
+    border: none;
 }

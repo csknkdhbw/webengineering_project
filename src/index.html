@@ -28,14 +28,14 @@
             <!-- background video -->
             <video id="bg-video" src="../res/video/background_video.mp4" autoplay muted loop></video>
 
-            <div id="header-title">
+            <section id="header-title">
                   <h1> TISCHTENNIS MEISTERSCHAFT </h1>
                   <h1> → &nbsp; 2023 &nbsp; ← </h1>
-            </div>
+            </section>
 
-            <nav id="navbar">
+            <nav>
                   <!-- main navigation menu -->
-                  <ul class="menu">
+                  <ul id="menu">
                         <li>
                               <a href="#description">
                                     <img class="icon" src="../res/img/description_icon.svg" alt="Home Icon" />
@@ -87,8 +87,8 @@
 
             <!-- button for switching the view mode (DARK/WHITE) -->
             <abbr title="Change View Mode (DARK/WHITE)">
-                  <button id="mode-switch-button" type="button" style="background: none; border: none;"
-                        onclick="switchMode()" onmouseover="hoverModeButton()" onmouseleave="leaveModeButton()">
+                  <button id="mode-switch-button" type="button" onclick="switchMode()" 
+                  onmouseover="hoverModeButton()" onmouseleave="leaveModeButton()">
             </abbr>
 
             <img id="mode-switch-icon" src="../res/img/mode_white.svg" />

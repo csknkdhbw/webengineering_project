@@ -16,7 +16,7 @@
 .history-pages-nav li a {
     display: flex;
     text-decoration: none;
-    border: 1px solid white;
+    border: 1px solid var(--default-text);
     border-radius: 25px;
     padding: 10px;
     margin: 5px;
@@ -24,6 +24,11 @@
     height: 30px;
     align-items: center;
     justify-content: center;
+}
+
+.history-link:hover {
+    font-weight: bold;
+    border-color: var(--default-border);
 }
 
 main {

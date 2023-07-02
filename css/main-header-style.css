@@ -4,21 +4,23 @@ body {
 }
 
 header {
-      color: #d4d4d4;
-      font-size: 1.5em;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.80);
       width: 100vw;
       height: 100vh;
-      background-color: rgba(0, 0, 0, 0.80);
-      overflow: hidden;
+      color: var(--default-text);
+      font-size: 1.5em;
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
+      gap: 7%;
 }
 
 #header-title {
       display: block;
       text-align: center;
+      width: 82%;
 }
 
 header h1 {
@@ -39,61 +41,78 @@ header h1 {
 }
 
 nav {
-      margin-top: 50px;
+      width: 82%;
 }
 
-.menu {
+#menu {
       display: flex;
       padding-left: 0;
-      gap: 2.5em;
-}
-
-.menu li {
-      height: 80px;
-      display: flex;
-      margin: 0;
-      padding: 0;
-      /* distribute gap between list items evenly */
-      flex: 1;
+      flex-flow: row wrap;
       align-items: center;
+      justify-content: center;
+      gap: 1.5em;
 }
 
-.menu li a {
+#menu li {
+      list-style: none;
+}
+
+#menu li a {
       display: flex;
       text-decoration: none;
       font-size: 0.75em;
-      border: 2px solid white;
+      border: 2px solid var(--default-text);
       border-radius: 25px;
-      margin: 5px;
-      height: 30px;
-      text-align: center;
       align-items: center;
-      justify-content: center;
 
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-left: 1.8em;
+      padding-right: 1.8em;
+      padding-top: 0.6em;
+      padding-bottom: 0.6em;
 }
 
 /*
       hover effect for the nav bar elements
 */
-.menu li a:hover {
+#menu li a:hover {
       font-weight: bold;
-      border-width: 3px;
-      border-color: goldenrod;
+      border-color: var(--default-border);
+      background-color: var(--default-background);
+      transform: translate(-5px, -10px);
 }
 
 .icon {
       /* Fügt einen Abstand zwischen dem Icon und dem Text hinzu */
-      margin-right: 10px;
-      width: 29px;
-      height: 29px;
+      margin-right: 12px;
 }
 
-@media only screen and (max-width: 600px) {
-      .menu {
+/*
+adjust layout for viewport width under 600px
+*/
+@media screen and (max-width: 600px) {
+
+      header h1 {
+            font-size: 1.5em;
+      }
+
+      /* no background video visible */
+      header {
+            background-color: rgba(0, 0, 0, 1);
+      }
+
+      #menu {
             flex-direction: column;
+            gap: 0.8em;
+      }
+
+      #menu li a {
+            font-size: 0.7em;
+      }
+
+      #menu li a:hover {
+            font-weight: bold;
+            border-color: var(--default-border);
+            background-color: var(--default-background);
+            transform: none;
       }
 }
