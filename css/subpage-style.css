@@ -26,3 +26,12 @@
     align-items: center;
     justify-content: center;
 }
+.ranking-gold {
+    color:gold;
+}
+.ranking-silver {
+    color:silver;
+}
+.ranking-bronze{
+    color:#bf8970;
+}
