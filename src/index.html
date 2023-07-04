@@ -34,8 +34,8 @@
             </section>
 
             <nav>
-                  <!-- main navigation menu -->
-                  <ul id="menu">
+                  <!-- header nav bar -->
+                  <ul id="nav-bar">
                         <li>
                               <a href="#description-head">
                                     <img class="icon" src="../res/img/description_icon.svg" alt="Description Icon" />
@@ -87,8 +87,8 @@
 
             <!-- button for switching the view mode (DARK/WHITE) -->
             <abbr title="Change View Mode (DARK/WHITE)">
-                  <button id="mode-switch-button" type="button" onclick="switchMode()" 
-                  onmouseover="hoverModeButton()" onmouseleave="leaveModeButton()">
+                  <button id="mode-switch-button" type="button" onclick="switchMode()" onmouseover="hoverModeButton()"
+                        onmouseleave="leaveModeButton()">
             </abbr>
 
             <img id="mode-switch-icon" src="../res/img/mode_white.svg" />
@@ -142,10 +142,10 @@
             </passage>
 
             <passage id="registration-section">
-              
+
                   <h2 class="registration"> <img id="registration-icon" src="../res/img/registration_icon.svg"
                               alt="Home Icon" /> Anmeldung und Regeln </h2>
-              
+
                   <!-- defines the registration process for the tournament -->
                   <div class="registration" id="registration-div">
                         <p> Nachfolgend sind die <b> Schritte zur Anmeldung </b> aufgeführt: </p>
@@ -271,7 +271,7 @@
                         <img id="podium-icon" src="../res/img/podium_icon.svg" alt="Home Icon" />
                         Podium
                   </h2>
-              
+
                   <!-- podium for the winners of the tournament -->
                   <div class="podium" id="description-div">
                         <table id="podium-table">
@@ -324,40 +324,17 @@
       </main>
 
       <footer>
-            <div id="imprint">
-                  <!-- defines the contact information of the tournament's management -->
-                  <address>
-                        <div>
-                              <ul>
-                                    <li>
-                                          <h3>Impressum</h3>
-                                    </li>
-                                    <li>Max Mustermann</li>
-                                    <li>Mustermannstraße 1</li>
-                                    <li>73733 Musterstadt</li>
-                                    <li>Telefon: 07121 11111</li>
-                                    <li>E-Mail: mustermail@muster.de</li>
-                              </ul>
-                        </div>
-                  </address>
-
-                  <h2> Legale Links </h2>
-                  <div id="legal-docs">
-                        <h3>Legale Links</h3>
-                        <div id="legal-docs-div">
-                              <ul>
-                                    <li><!-- disclaimer so that the participants can not sue us -->
-                                          <a id="disclaimer"
-                                                href="https://www.bsi.bund.de/DE/Service/Haftungsausschluss/haftungsausschluss_node.html">
-                                                Haftungsausschluss </a>
-                                    </li>
-                                    <li><a href="../src/legal-documents.html">Quellen</a></li>
-                              </ul>
-                        </div>
-
-                  </div>
-
-            </div>
+            <section id="footer-nav-bar">
+                  <ul>
+                        <li> <a href="../src/imprint.html"> Impressum </a> </li>
+                        <li> <a href="../src/legal-documents.html"> Quellen </a> </li>
+                        <li> <a
+                                    href="https://www.bsi.bund.de/DE/Service/Haftungsausschluss/haftungsausschluss_node.html">
+                                    Haftungsausschluss 
+                              </a>
+                        </li>
+                  </ul>
+            </section>
       </footer>
 </body>
 
