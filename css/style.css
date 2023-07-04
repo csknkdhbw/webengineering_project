@@ -17,6 +17,8 @@ body {
     --white-text: #1f1f1f;
     --white-background: #f6f6f6;
 
+    --border-thickness: 0.15em;
+
     color: #d4d4d4;
     background-color: var(--default-dark);
 }
@@ -42,15 +44,18 @@ footer {
 #footer-nav-bar {
     width: 82%;
     margin: 0px auto;
-    border-top: 2px solid var(--default-border);
+    border-top: var(--border-thickness) solid var(--default-border);
+    border-bottom: var(--border-thickness) solid var(--default-border);
 }
 
 #footer-nav-bar ul {
     padding-top: 0.5em;
+    padding-bottom: 0.5em;
     display: flex;
     list-style: none;
-    gap: 4em;
+    gap: 5em;
     align-items: center;
+    justify-content: center;
 }
 
 #imprint {
@@ -197,7 +202,7 @@ use the adjacent selector to design the sections following a title
 */
 
 h2+div {
-    border-width: 0.2em;
+    border-width: var(--border-thickness);
     border-color: var(--default-border);
 
     border-style: solid;

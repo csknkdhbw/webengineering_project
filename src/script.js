@@ -20,7 +20,7 @@ function switchMode() {
             }
 
             // change text color of links
-            const link_elements = document.querySelectorAll("main a");
+            const link_elements = document.querySelectorAll(".body-content a");
             for (let i = 0; i < link_elements.length; i++) {
                   link_elements[i].style.color = "var(--white-text)";
                   link_elements[i].style.borderColor = "var(--white-border)";
@@ -34,6 +34,9 @@ function switchMode() {
             for (let i = 0; i < table_elements.length; i++) {
                   table_elements[i].style.backgroundColor = "var(--white-default)";
             }
+
+            // change footer border
+            document.getElementById("footer-nav-bar").style.borderColor = "var(--white-border)";
 
             // change icons
             document.getElementById("description-icon").src = "../res/img/description_icon_black.svg";
@@ -62,7 +65,7 @@ function switchMode() {
             }
 
             // change text color of links
-            const link_elements = document.querySelectorAll("main a");
+            const link_elements = document.querySelectorAll(".body-content a");
             for (let i = 0; i < link_elements.length; i++) {
                   link_elements[i].style.color = "var(--default-text)";
                   link_elements[i].style.borderColor = "var(--default-text)";
@@ -76,6 +79,10 @@ function switchMode() {
             for (let i = 0; i < table_elements.length; i++) {
                   table_elements[i].style.backgroundColor = "var(--default-background)";
             }
+
+            
+            // change footer border
+            document.getElementById("footer-nav-bar").style.borderColor = "var(--default-border)";
 
             // change icons
             document.getElementById("description-icon").src = "../res/img/description_icon.svg";
