@@ -2,13 +2,6 @@
 /*--------------------------------------------------------------*/
 
 /*History pages as a flexbox*/
-.history-pages{
-    display:flex;
-    list-style-type: none;
-    align-items: center;
-    justify-content: center;
-}
-
 .history-pages-nav, #legal-docs-div {
     display: flex;
     flex: 1;
@@ -21,7 +14,7 @@
     display: flex;
 }
 
-.history-pages-nav li a ,#legal-docs-div li a{
+.history-pages-nav li a , #legal-docs-div li a{
     display: flex;
     text-decoration: none;
     border: 1px solid var(--default-text);
