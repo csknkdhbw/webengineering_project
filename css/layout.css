@@ -121,9 +121,6 @@ main {
         grid-row: 4;
         justify-content: end;
     }
-    #tournament-process-div{
-
-    }
     #podium-section{
         grid-column: 1;
         grid-row: 5;
