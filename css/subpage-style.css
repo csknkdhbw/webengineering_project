@@ -38,8 +38,6 @@ header {
     align-items: center;
     justify-content: center;
 }
-main
-=======
 
 .stage {
     width: 10em;
@@ -67,11 +65,8 @@ main
 }
 .ranking-bronze{
     color:#bf8970;
-main
-=======
 }
 
 h2 + div {
     margin-bottom: 4em;
-main
 }
