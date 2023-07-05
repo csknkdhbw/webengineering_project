@@ -40,8 +40,8 @@ function switchMode() {
                   removed_cells[i].style.backgroundColor = "var(--white-default)";
             }
             //the variable --white-default does not work here, therfore there was no additional variable declared
-            document.getElementById("second-winner").style.borderColor = "#f6f6f6";
-            document.getElementById("third-winner").style.borderColor = "#f6f6f6";
+            document.getElementById("second").style.borderColor = "#f6f6f6";
+            document.getElementById("third").style.borderColor = "#f6f6f6";
 
             // change footer border
             document.getElementById("footer-nav-bar").style.borderColor = "var(--white-border)";
@@ -94,8 +94,8 @@ function switchMode() {
                   removed_cells[i].style.backgroundColor = "var(--default-dark)";
             }
             //the variable --white-default does not work here, therfore there was no additional variable declared
-            document.getElementById("second-winner").style.borderColor = "#1c1c1c";
-            document.getElementById("third-winner").style.borderColor = "#1c1c1c";
+            document.getElementById("second").style.borderColor = "#1c1c1c";
+            document.getElementById("third").style.borderColor = "#1c1c1c";
 
             // change footer border
             document.getElementById("footer-nav-bar").style.borderColor = "var(--default-border)";
