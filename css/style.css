@@ -244,3 +244,17 @@ aside {
     background: none;
     border: none;
 }
+
+/*Input-Interface CSS*/
+
+input{
+    width: 2em;
+}
+
+/*
+The Score, which can be changed via an input promt, wont remain in the Interface.
+It will be changed to a fixed-score-GUI.
+*/
+.fixed-score{
+    display: none;
+}
