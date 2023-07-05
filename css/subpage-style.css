@@ -55,3 +55,17 @@ footer {
     gap: 1.5em;
     margin-bottom: 3em;
 }
+
+.ranking-gold {
+    color:gold;
+}
+.ranking-silver {
+    color:silver;
+}
+.ranking-bronze{
+    color:#bf8970;
+}
+
+h2 + div {
+    margin-bottom: 4em;
+}
