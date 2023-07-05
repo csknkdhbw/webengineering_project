@@ -1,6 +1,7 @@
 let DARK_MODE = 0;
 let WHITE_MODE = 1;
 
+// variable mode stores the current used layout design mode
 let mode = 0;
 
 function switchMode() {

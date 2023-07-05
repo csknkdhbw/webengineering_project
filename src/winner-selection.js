@@ -13,23 +13,17 @@ function update(score_in_1, score_in_2, index1, index2, winner_element) {
       const score1 = parseInt(document.getElementById(score_in_1).value);
       const score2 = parseInt(document.getElementById(score_in_2).value);
 
-      console.log(score1);
-      console.log(score2);
-
       // update our score_tree data structure
       let set_score = set_score_value(score1, score2, index1, index2);
-
-      console.log(score_tree);
 
       if (set_score == -1)
             return;
 
       // set winner name at the next tournament game
-      if (score1 > score2) {
+      if (score1 > score2)
             document.getElementById(winner_element).innerHTML = get_player_name(find_winning_player(index1));
-      } else {
+      else
             document.getElementById(winner_element).innerHTML = get_player_name(find_winning_player(index2));
-      }
 }
 
 // inserts score values of one game at the right position inside the score_tree
@@ -126,9 +120,6 @@ function find_nth_winner(n) {
 
             let sf1_score_diff = Math.abs(score_tree[3] - score_tree[4]);
             let sf2_score_diff = Math.abs(score_tree[5] - score_tree[6]);
-
-            console.log("sf1 sd: " + sf1_score_diff);
-            console.log("sf2 sd: " + sf2_score_diff);
 
             curr = (sf1_score_diff < sf2_score_diff) ? sf1_loser : sf2_loser;
       }
