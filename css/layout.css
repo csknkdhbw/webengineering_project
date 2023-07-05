@@ -38,7 +38,7 @@ main {
     display: grid;
 }
 
-/*Grid-layout for screen > 600px*/
+/*Grid-layout for screen > 1300px*/
 @media (min-width: 1300px) {
     main {
         grid-template-columns: 2fr 1fr;
@@ -85,7 +85,7 @@ main {
 }
 
 
-/*Grid-layout for screen > 300px & < 600px (tablet-view)*/
+/*Grid-layout for screen > 600px & < 1300px (tablet-view)*/
 @media (min-width: 600px) and (max-width: 1300px) {
     main {
         grid-template-columns: auto;
@@ -135,7 +135,7 @@ main {
     }
 }
 
-/*Grid-layout for screen < 300px (mobile-view)*/
+/*Grid-layout for screen < 600px (mobile-view)*/
 @media (max-width: 600px) {
     main {
         grid-template-columns: auto;
@@ -199,5 +199,8 @@ main {
         align-items: center;
         justify-content: center;
         font-size: 0.6em;
+    }
+    input{
+        width: 2em;
     }
 }
