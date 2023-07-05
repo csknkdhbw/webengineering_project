@@ -2,15 +2,7 @@
 /*--------------------------------------------------------------*/
 
 /*History pages as a flexbox*/
-.history-pages {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-    justify-content: center;
-}
-
-.history-pages-nav,
-#legal-docs-div {
+.history-pages-nav, #legal-docs-div {
     display: flex;
     flex: 1;
     gap: 0.5em;

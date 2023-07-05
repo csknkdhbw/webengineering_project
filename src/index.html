@@ -20,6 +20,7 @@
 
       <!-- include the external JavaScript file -->
       <script type="text/javascript" src="../src/script.js"></script>
+      <script type="text/javascript" src="../src/winner-selection.js"></script>
 </head>
 
 <body>
@@ -72,7 +73,7 @@
                         </li>
 
                         <li>
-                              <a href="#imprint">
+                              <a href="#footer-nav-bar">
                                     <img class="icon" src="../res/img/imprint_icon.svg" alt="Imprint Icon" />
                                     Impressum
                               </a>
@@ -266,46 +267,38 @@
             </passage>
 
             <passage id=podium-section>
-
                   <h2 class="podium">
                         <img id="podium-icon" src="../res/img/podium_icon.svg" alt="Home Icon" />
                         Podium
                   </h2>
 
                   <!-- podium for the winners of the tournament -->
-                  <div class="podium" id="podium-div">
-                        <table id="podium-table">
-                              <!-- first row -->
-                              <tr>
-                                    <td class="removed-cell"> </td>
-                                    <th colspan="3" rowspan="3" id="first-winner" class="placement-col">
-                                          <section class="podium-text">
-                                                <img id="trophy" src="../res/img/trophy_icon.svg" alt="trophy_icon">
-                                                <b> Max</b>
-                                          </section>
-                                    <td class="removed-cell"> </td>
-                              </tr>
-                              <!-- second row -->
-                              <tr>
-                                    <td id="second-winner" class="placement-col">
-                                          <section class="podium-text">
-                                                <img id="trophy" src="../res/img/trophy_icon.svg" alt="trophy_icon">
-                                                <b> Laura</b>
-                                          </section>
-                                    </td>
-                                    <td id="third-winner" class="placement-col">
-                                          <section class="podium-text">
-                                                <img id="trophy" src="../res/img/trophy_icon.svg" alt="trophy_icon">
-                                                <b> Hans</b>
-                                          </section>
-                                    </td>
-                              </tr>
-                        </table>
+                  <div class="podium" id="description-div">
+                        <section id="podium">
+                              <div id="second" class="stage">
+                                    <section class="stage-text"> 
+                                          <img src="../res/img/silver_medal_icon.png" alt="trophy_icon">
+                                          <b> Hans </b>
+                                    </section>
+                              </div>
+                              <div id="first" class="stage">
+                                    <section class="stage-text"> 
+                                          <img src="../res/img/gold_medal_icon.png" alt="trophy_icon">
+                                          <b> Peter </b>
+                                    </section>
+                              </div>
+                              <div id="third" class="stage">
+                                    <section class="stage-text"> 
+                                          <img src="../res/img/bronze_medal_icon.png" alt="trophy_icon">
+                                          <b> Gabriel </b>
+                                    </section>
+                              </div>
+                        </section>
                   </div>
             </passage>
 
             <passage id="history-section">
-                  <h2 class="history-pages">
+                  <h2>
                         <img id="history-icon" src="../res/img/history_icon.svg" alt="History Icon" />
                         Vergangene Turniere
                   </h2>
