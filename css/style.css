@@ -248,13 +248,37 @@ aside {
 /*Input-Interface CSS*/
 
 input{
-    width: 2em;
+    width: 1.7em;
 }
 
-/*
-The Score, which can be changed via an input promt, wont remain in the Interface.
-It will be changed to a fixed-score-GUI.
-*/
-.fixed-score{
-    display: none;
+.score-text-input {
+    background-color: var(--default-dark);
+    border: none;
+    border-bottom: 2px solid white;
+    outline: none;
+    color: white;
+    font-family: "Rubik", sans-serif;
+}
+
+.score-text-input[type="text"] {
+    text-align: center;
+    font-size: 1em;
+}
+
+.tournament-tree-td {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4em;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-input-button {
+    background: none;
+    border: none;
+    color: var(--default-text);
+}
+
+.score-input-button:hover {
+    transform: scale(1.2);
 }

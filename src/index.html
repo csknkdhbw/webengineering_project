@@ -192,136 +192,207 @@
                                     <!-- first row -->
                                     <tr>
 
-                                          <td class="quarter-final-td"> <b class="table-description">
-                                                      <time datetime="2023-05-25T08:00">25.05.2023 8 Uhr</time>
-                                                </b>
-                                                <br />
-                                                Viertelfinale 1
-                                                <!--Input-promt-section-->
-                                                <section class="score-input-interface">
-                                                      <input type="number" class="participant"></input> : <input
-                                                            type="number" class="participant"></input>
-                                                      <br />
-                                                      <button type="button">okay</button>
+                                          <td class="quarter-final-td">
+                                                <section class="tournament-tree-td">
+
+                                                      <b class="table-description">
+                                                            <time datetime="2023-05-25T08:00">25.05.2023 8 Uhr</time>
+                                                      </b>
+
+                                                      Viertelfinale 1
+
+                                                      <!--Input-promt-section-->
+                                                      <section class="score-input-interface">
+                                                            <input type="text" id="qf1s1"
+                                                                  class="score-text-input"></input> :
+                                                            <input type="text" id="qf1s2"
+                                                                  class="score-text-input"></input>
+
+                                                            <button type="button" class="score-input-button"
+                                                                  onClick="update('qf1s1', 'qf1s2', 7, 8, 'sf1p1')">
+                                                                  OK
+                                                            </button>
+                                                      </section>
+
+                                                      Hans vs. Max
+
                                                 </section>
-                                                <!--Fixed-Score: immutable depiction of the scores -->
-                                                <section class="fixed-score">
-                                                      <p></p>
-                                                </section>
-                                                <hr />
-                                                Hans vs. Max
 
                                           </td>
-                                          <td class="semi-final-td" rowspan="2"> <b class="table-description"><time
-                                                            datetime="2023-05-26T08:00">26.05.2023 8
-                                                            Uhr</time></b><br />Halbfinale 1
-                                                <!--Input-promt-section-->
-                                                <section class="score-input-interface">
-                                                      <input type="number" class="participant"></input> : <input
-                                                            type="number" class="participant"></input>
-                                                      <br />
-                                                      <button type="button">okay</button>
+
+                                          <td class="semi-final-td" rowspan="2">
+
+                                                <section class="tournament-tree-td">
+
+                                                      <b class="table-description">
+                                                            <time datetime="2023-05-26T08:00">26.05.2023 8
+                                                                  Uhr</time>
+                                                      </b>
+
+                                                      Halbfinale 1
+
+                                                      <!--Input-promt-section-->
+                                                      <section class="score-input-interface">
+                                                            <input type="text" id="sf1s1"
+                                                                  class="score-text-input"></input> :
+                                                            <input type="text" id="sf1s2"
+                                                                  class="score-text-input"></input>
+
+                                                            <button type="button" class="score-input-button"
+                                                                  onclick="update('sf1s1', 'sf1s2', 3, 4, 'fp1')">
+                                                                  OK
+                                                            </button>
+                                                      </section>
+
+                                                      <span id="sf1p1"> Halbfinalist 1 </span>
+                                                      vs.
+                                                      <span id="sf1p2"> Halbfinalist 2 </span>
+
                                                 </section>
-                                                <!--Fixed-Score: immutable depiction of the scores -->
-                                                <section class="fixed-score">
-                                                      <p></p>
-                                                </section>
-                                                <hr />Halbfinalist 1 <br /> vs. <br /> Halbfinalist 2
                                           </td>
-                                          <td class="final-td" rowspan="4"> <b class="table-description"><time
-                                                            datetime="2023-05-27T08:00">27.05.2023 8
-                                                            Uhr</time></b><br />Finale
-                                                <!--Input-promt-section-->
-                                                <section class="score-input-interface">
-                                                      <input type="number" class="participant"></input> : <input
-                                                            type="number" class="participant"></input>
-                                                      <br />
-                                                      <button type="button">okay</button>
+
+                                          <td class="final-td" rowspan="4">
+
+                                                <section class="tournament-tree-td">
+                                                      <b class="table-description">
+                                                            <time datetime="2023-05-27T08:00">27.05.2023 8 Uhr</time>
+                                                      </b>
+
+                                                      Finale
+
+                                                      <!--Input-promt-section-->
+                                                      <section class="score-input-interface">
+                                                            <input type="text" id="fs1"
+                                                                  class="score-text-input"></input> :
+                                                            <input type="text" id="fs2"
+                                                                  class="score-text-input"></input>
+
+                                                            <button type="button" class="score-input-button"
+                                                                  onclick="update('fs1', 'fs2', 1, 2, 'fw')">
+                                                                  OK
+                                                            </button>
+                                                      </section>
+
+                                                      <span id="fp1"> Finalist 1 </span>
+                                                      vs.
+                                                      <span id="fp2"> Finalist 2 </span>
+                                                      <span id="fw"> <b> Gewinner </b> </span>
                                                 </section>
-                                                <!--Fixed-Score: immutable depiction of the scores -->
-                                                <section class="fixed-score">
-                                                      <p></p>
-                                                </section>
-                                                <hr />Finalist 1 <br /> vs. <br /> Finalist 2
                                           </td>
                                     </tr>
 
                                     <!-- second row -->
                                     <tr>
 
-                                          <td class="quarter-final-td"> <b class="table-description"><time
-                                                            datetime="2023-05-25T10:00">25.05.2023
-                                                            10
-                                                            Uhr</time></b><br />Viertelfinale 2
-                                                <!--Input-promt-section-->
-                                                <section class="score-input-interface">
-                                                      <input type="number" class="participant"></input> : <input
-                                                            type="number" class="participant"></input>
-                                                      <br />
-                                                      <button type="button">okay</button>
+                                          <td class="quarter-final-td">
+
+                                                <section class="tournament-tree-td">
+                                                      <b class="table-description">
+                                                            <time datetime="2023-05-25T10:00">25.05.2023 10 Uhr</time>
+                                                      </b>
+
+                                                      Viertelfinale 2
+
+                                                      <!--Input-promt-section-->
+                                                      <section class="score-input-interface">
+                                                            <input type="text" id="qf2s1"
+                                                                  class="score-text-input"></input> :
+                                                            <input type="text" id="qf2s2"
+                                                                  class="score-text-input"></input>
+
+                                                            <button type="button" class="score-input-button"
+                                                                  onclick="update('qf2s1', 'qf2s2', 9, 10, 'sf1p2')">
+                                                                  OK
+                                                            </button>
+                                                      </section>
+
+                                                      Tom vs. Jeremias
                                                 </section>
-                                                <!--Fixed-Score: immutable depiction of the scores -->
-                                                <section class="fixed-score">
-                                                      <p></p>
-                                                </section>
-                                                <hr />
-                                                Tom vs. Jeremias
+
                                           </td>
                                     </tr>
+
                                     <!-- third row -->
                                     <tr>
 
-                                          <td class="quarter-final-td"> <b class="table-description"><time
-                                                            datetime="2023-05-25T12:00">25.05.2023
-                                                            12
-                                                            Uhr</time></b><br />Viertelfinale 3
-                                                <!--Input-promt-section-->
-                                                <section class="score-input-interface">
-                                                      <input type="number" class="participant"></input> : <input
-                                                            type="number" class="participant"></input>
-                                                      <br />
-                                                      <button type="button">okay</button>
+                                          <td class="quarter-final-td">
+
+                                                <section class="tournament-tree-td">
+                                                      <b class="table-description">
+                                                            <time datetime="2023-05-25T12:00">25.05.2023 12 Uhr</time>
+                                                      </b>
+
+                                                      Viertelfinale 3
+
+                                                      <!--Input-promt-section-->
+                                                      <section class="score-input-interface">
+                                                            <input type="text" id="qf3s1"
+                                                                  class="score-text-input"></input> :
+                                                            <input type="text" id="qf3s2"
+                                                                  class="score-text-input"></input>
+
+                                                            <button type="button" class="score-input-button"
+                                                                  onclick="update('qf3s1', 'qf3s2', 11, 12, 'sf2p1')">
+                                                                  OK
+                                                            </button>
+                                                      </section>
+
+                                                      Lisa vs. Bob
                                                 </section>
-                                                <!--Fixed-Score: immutable depiction of the scores -->
-                                                <section class="fixed-score">
-                                                      <p></p>
-                                                </section>
-                                                <hr />Lisa vs. Bob
                                           </td>
-                                          <td class="semi-final-td" rowspan="2"> <b class="table-description"><time
-                                                            datetime="2023-05-26T14:00">25.05.2023 14
-                                                            Uhr</time></b><br />Halbfinale 2
-                                                <!--Input-promt-section-->
-                                                <section class="score-input-interface">
-                                                      <input type="number" class="participant"></input> : <input
-                                                            type="number" class="participant"></input>
-                                                      <br />
-                                                      <button type="button">okay</button>
+
+                                          <td class="semi-final-td" rowspan="2">
+
+                                                <section class="tournament-tree-td">
+                                                      <b class="table-description">
+                                                            <time datetime="2023-05-26T14:00">25.05.2023 14 Uhr</time>
+                                                      </b>
+
+                                                      Halbfinale 2
+
+                                                      <!--Input-promt-section-->
+                                                      <section class="score-input-interface">
+                                                            <input type="text" id="sf2s1"
+                                                                  class="score-text-input"></input> :
+                                                            <input type="text" id="sf2s2"
+                                                                  class="score-text-input"></input>
+
+                                                            <button type="button" class="score-input-button"
+                                                                  onclick="update('sf2s1', 'sf2s2', 5, 6, 'fp2')">
+                                                                  OK
+                                                            </button>
+                                                      </section>
+
+                                                      <span id="sf2p1"> Halbfinalist 1 </span>
+                                                      vs.
+                                                      <span id="sf2p2"> Halbfinalist 2 </span>
+
                                                 </section>
-                                                <!--Fixed-Score: immutable depiction of the scores -->
-                                                <section class="fixed-score">
-                                                      <p></p>
-                                                </section>
-                                                <hr /> Halbfinalist 1 <br /> vs. <br /> Halbfinalist 2
                                           </td>
                                     </tr>
                                     <!-- fourth row -->
                                     <tr>
-                                          <td class="quarter-final-td"> <b class="table-description"><time
-                                                            datetime="2023-05-25T14:00">25.05.2023
-                                                            14 Uhr</time></b><br />Viertelfinale 4
-                                                <!--Input-promt-section-->
-                                                <section class="score-input-interface">
-                                                      <input type="number" class="participant"></input> : <input
-                                                            type="number" class="participant"></input>
-                                                      <br />
-                                                      <button type="button">okay</button>
+                                          <td class="quarter-final-td">
+                                                <section class="tournament-tree-td">
+                                                      <b class="table-description">
+                                                            <time datetime="2023-05-25T14:00">25.05.2023 14 Uhr</time>
+                                                      </b>
+                                                      
+                                                      Viertelfinale 4
+
+                                                      <!--Input-promt-section-->
+                                                      <section class="score-input-interface">
+                                                            <input type="text" id="qf4s1" class="score-text-input"></input> :
+                                                            <input type="text" id="qf4s2" class="score-text-input"></input>
+                                                   
+                                                            <button type="button" class="score-input-button"
+                                                                  onclick="update('qf4s1', 'qf4s2', 13, 14, 'sf2p2')">
+                                                                  OK
+                                                            </button>
+                                                      </section>
+                                        
+                                                      Emilia vs. Georg
                                                 </section>
-                                                <!--Fixed-Score: immutable depiction of the scores -->
-                                                <section class="fixed-score">
-                                                      <p></p>
-                                                </section>
-                                                <hr />Hans vs. Max
                                           </td>
                                     </tr>
                               </tbody>
@@ -355,19 +426,19 @@
                               <div id="second" class="stage">
                                     <section class="stage-text">
                                           <img src="../res/img/silver_medal_icon.png" alt="trophy_icon">
-                                          <b> Hans </b>
+                                          <b id="second-winner"> Hans </b>
                                     </section>
                               </div>
                               <div id="first" class="stage">
                                     <section class="stage-text">
                                           <img src="../res/img/gold_medal_icon.png" alt="trophy_icon">
-                                          <b> Peter </b>
+                                          <b id="first-winner"> Peter </b>
                                     </section>
                               </div>
                               <div id="third" class="stage">
                                     <section class="stage-text">
                                           <img src="../res/img/bronze_medal_icon.png" alt="trophy_icon">
-                                          <b> Gabriel </b>
+                                          <b id="third-winner"> Gabriel </b>
                                     </section>
                               </div>
                         </section>
