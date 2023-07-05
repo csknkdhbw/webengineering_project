@@ -46,7 +46,7 @@
             </div>
 
             <!-- large tournament tree implemented as a table -->
-            <h2>Turnierablauf</h2>
+            <h2> Turnierablauf </h2>
             <div>
                   <table id="large-participants-table">
                         <thead>
@@ -148,37 +148,30 @@
                         </tbody>
                   </table>
             </div>
-            <hr />
-            <h2>Gewinner des Turniers</h2>
+
+            <h2> Gewinner des Turniers </h2>
             <!-- podium for the winners of the tournament -->
             <div class="podium" id="description-div">
-                  <table id="podium-table">
-                        <!-- first row -->
-                        <tr>
-                              <td class="removed-cell"> </td>
-                              <th colspan="3" rowspan="3" id="first-winner" class="placement-col">
-                                    <section class="podium-text">
-                                          <img id="trophy" src="../../res/img/trophy_icon.svg" alt="trophy_icon">
-                                          <b> Tiffany Mcdonald</b>
-                                    </section>
-                              <td class="removed-cell"> </td>
-                        </tr>
-                        <!-- second row -->
-                        <tr>
-                              <td id="second-winner" class="placement-col">
-                                    <section class="podium-text">
-                                          <img id="trophy" src="../../res/img/trophy_icon.svg" alt="trophy_icon">
-                                          <b> Stanley Poole</b>
-                                    </section>
-                              </td>
-                              <td id="third-winner" class="placement-col">
-                                    <section class="podium-text">
-                                          <img id="trophy" src="../../res/img/trophy_icon.svg" alt="trophy_icon">
-                                          <b> Cormac Whitehead</b>
-                                    </section>
-                              </td>
-                        </tr>
-                  </table>
+                  <section id="podium">
+                        <div id="second" class="stage">
+                              <section class="stage-text"> 
+                                    <img src="../../res/img/silver_medal_icon.png" alt="trophy_icon">
+                                    <b> Stanley Poole </b>
+                              </section>
+                        </div>
+                        <div id="first" class="stage">
+                              <section class="stage-text"> 
+                                    <img src="../../res/img/gold_medal_icon.png" alt="trophy_icon">
+                                    <b> Tiffany Mcdonald </b>
+                              </section>
+                        </div>
+                        <div id="third" class="stage">
+                              <section class="stage-text"> 
+                                    <img src="../../res/img/bronze_medal_icon.png" alt="trophy_icon">
+                                    <b> Cormac Whitehead </b>
+                              </section>
+                        </div>
+                  </section>
             </div>
       </main>
 

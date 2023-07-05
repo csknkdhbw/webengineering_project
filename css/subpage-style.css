@@ -1,19 +1,31 @@
+header {
+    text-align: center;
+    margin-top: 3em;
+}
+
+#imprint-list {
+    list-style: none;
+}
+
 #subpages-div{
     display:flex;
     flex-flow: row;
     gap: auto;
     justify-content: center;
 }
+
 #subpages-div ul{
     display: flex;
     flex-flow: row;
     gap: 0.5em;
     justify-content: center;
 }
+
 #subpages-div li{
     display:flex;
     justify-content: center;
 }
+
 #subpages-div ul a{
     display: flex;
     text-decoration: none;
@@ -26,6 +38,27 @@
     align-items: center;
     justify-content: center;
 }
+main
+=======
+
+.stage {
+    width: 10em;
+}
+
+footer {
+    width: 82%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    margin-bottom: 3em;
+}
+
+main
 .ranking-gold {
     color:gold;
 }
@@ -34,4 +67,11 @@
 }
 .ranking-bronze{
     color:#bf8970;
+main
+=======
+}
+
+h2 + div {
+    margin-bottom: 4em;
+main
 }

@@ -2,13 +2,6 @@
 /*--------------------------------------------------------------*/
 
 /*History pages as a flexbox*/
-.history-pages{
-    display:flex;
-    list-style-type: none;
-    align-items: center;
-    justify-content: center;
-}
-
 .history-pages-nav, #legal-docs-div {
     display: flex;
     flex: 1;
@@ -17,11 +10,13 @@
     flex-direction: column;
 }
 
-.history-pages-nav li, #legal-docs-div li {
+.history-pages-nav li,
+#legal-docs-div li {
     display: flex;
 }
 
-.history-pages-nav li a ,#legal-docs-div li a{
+.history-pages-nav li a,
+#legal-docs-div li a {
     display: flex;
     text-decoration: none;
     border: 1px solid var(--default-text);
@@ -40,17 +35,17 @@
 }
 
 main {
-    display:grid;
+    display: grid;
 }
 
-/*Grid-layout for screen > 600px*/
-@media (min-width: 600px) {
+/*Grid-layout for screen > 1300px*/
+@media (min-width: 1300px) {
     main {
         grid-template-columns: 2fr 1fr;
         grid-template-rows: auto auto auto 1fr auto;
         gap: 1px;
     }
-    
+
     #description-section {
         grid-column: 1/-1;
         grid-row: 1;
@@ -60,7 +55,7 @@ main {
         grid-column: 1/-1;
         grid-row: 2;
     }
-    
+
     #registration-section {
         grid-column: 1/-1;
         grid-row: 3;
@@ -68,7 +63,7 @@ main {
 
     #history-section {
         grid-column: 2;
-        grid-row: 4;   
+        grid-row: 4;
     }
 
     #tournament-section {
@@ -90,107 +85,122 @@ main {
 }
 
 
-/*Gridlayout*/
-@media (max-width: 300px) {
-    main{
+/*Grid-layout for screen > 600px & < 1300px (tablet-view)*/
+@media (min-width: 600px) and (max-width: 1300px) {
+    main {
         grid-template-columns: auto;
         grid-template-rows: auto auto auto auto auto auto;
-        
+        gap: 1px;
     }
-    
-    #description-section{
+
+    #description-section {
         grid-column: 1;
         grid-row: 1;
     }
-    #requirements-section{
+
+    #requirements-section {
         grid-column: 1;
         grid-row: 2;
     }
+
     #registration-section {
         grid-column: 1;
         grid-row: 3;
     }
-    #tournament-section{
+
+    #tournament-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 0;
         grid-column: 1;
         grid-row: 4;
-    }
-    #podium-section{
-        grid-column: 2;
-        grid-row: 5;
-    }
-    #history-section{
-        grid-column: 2;
-        grid-row: 6;
+        justify-content: end;
     }
 
-} 
-
-@media (min-width: 300px) and (max-width: 600px){
-    main{ 
-        grid-template-columns: auto;
-        grid-template-rows: auto auto auto auto auto auto;
-        
-    }
-    
-    #description-section{
-        grid-column: 1;
-        grid-row: 1;
-    }
-    #requirements-section{
-        grid-column: 1;
-        grid-row: 2;
-    }
-    #registration-section {
-        grid-column: 1;
-        grid-row: 3;
-    }
-    #tournament-section{
-        grid-column: 1;
-        grid-row: 4;
-    }
-    #podium-section{
+    #podium-section {
         grid-column: 1;
         grid-row: 5;
     }
-    #history-section{
+
+    #history-section {
         grid-column: 1;
         grid-row: 6;
+    }
+
+    #footer-nav-bar ul {
+        flex-direction: column;
+        gap: 1.5em;
+        font-size: 0.8em;
     }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 600px){
-    main{
-        display: grid;
-        grid-template-columns: auto 1fr;
-        grid-template-rows: auto auto auto 1fr auto;
+/*Grid-layout for screen < 600px (mobile-view)*/
+@media (max-width: 600px) {
+    main {
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto auto;
+        row-gap: 0px;
+        font-size: 0.7em;
     }
-    
-    #description-section{
-        grid-column: 1/-1;
+
+    #description-section {
+        grid-column: 1;
         grid-row: 1;
     }
-    #requirements-section{
-        grid-column: 1/-1;
+
+    #requirements-section {
+        grid-column: 1;
         grid-row: 2;
     }
+
     #registration-section {
-        grid-column: 1/-1;
+        grid-column: 1;
         grid-row: 3;
     }
-    #tournament-section{
+
+    #tournament-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 0;
         grid-column: 1;
-        grid-row: 4/6;
-    }
-    #podium-section{
-        grid-column: 2;
         grid-row: 4;
+        justify-content: end;
     }
-    #history-section{
-        grid-column: 2;
+
+    #tournament-process-div table{
+        font-size: 0.5em;
+    }
+
+    #tournament-process-div a {
+        font-size: 0.8em;
+    }
+
+    #podium-section {
+        grid-column: 1;
         grid-row: 5;
     }
-} 
+    #podium-div{
+        font-size: 0.8em;
+    }
 
-    
-
-
+    #history-section {
+        grid-column: 1;
+        grid-row: 6;
+    }
+    #footer-nav-bar ul {
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        gap: 1.5em;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.6em;
+    }
+    input{
+        width: 2em;
+    }
+}

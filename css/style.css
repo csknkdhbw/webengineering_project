@@ -108,74 +108,55 @@ tr {
     border-radius: 3%;
 }
 
-#podium-table {
-    color: var(--default-dark);
-    border: none;
-    font-family: Geneva, Tahoma, sans-serif;
-    font-style: inherit;
-    text-decoration-style: solid;
-    table-layout: auto;
+
+#podium {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    height: 20em;
+    align-items: flex-end;
+    justify-content: center;
 }
 
-#trophy {
-    top: auto;
+#second {
+    height: 70%;
+    background-color: silver;
 }
 
-#first-winner {
+#first {
+    height: 90%;
     background-color: gold;
-    max-height: 3cm;
-    text-align: center;
-    padding-left: 1cm;
-    padding-right: 1cm;
-    border-radius: 5%;
-    max-width: 1cm;
-
+    font-size: larger;
 }
 
-.podium-text {
-    margin-top: 0.3cm;
+#third {
+    height: 50%;
+    background-color: #cd7f32;
+    font-size: smaller;
+}
+
+.stage {
+    width: 7.5em;
+    border-radius: 20px;
+}
+
+.stage-text {
+    margin-top: 1.5em;
+    color: black;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.stage-text img {
+    width: 48px;
+    height: 48px;
+}
+
+.stage-text b {
     text-align: center;
-    justify-content: center;
-    gap: 2mm;
-
 }
-
-#second-winner {
-    background-color: silver;
-    padding-bottom: 3mm;
-    height: 3cm;
-    border-left: none;
-    border-right: none;
-    text-align: end;
-    padding-right: 5mm;
-    border-bottom: none;
-    padding-top: none;
-    border-top-width: 1%;
-    padding-left: 7mm;
-    width: 1cm;
-}
-
-#third-winner {
-    border-color: none;
-    background-color: #bf8970;
-    padding-bottom: 3mm;
-    border-left: none;
-    height: 2cm;
-    text-align: center;
-    padding-top: none;
-    padding-right: 5mm;
-    border-bottom: none;
-    border-top-width: 1cm;
-    width: 1cm;
-}
-
-.removed-cell {
-    border: none;
-    background-color: var(--default-dark);
-}
-
 
 /*
 main section layout 
@@ -240,13 +221,6 @@ aside {
     justify-content: center;
 }
 
-address, #legal-docs-div {
-    border-width: 2px;
-    border-color: white;
-    border-style: solid;
-    border-radius: 20px;
-}
-
 #tournament-section>div {
     height: 100%;
     display: flex;
@@ -269,4 +243,18 @@ address, #legal-docs-div {
 #mode-switch-button {
     background: none;
     border: none;
+}
+
+/*Input-Interface CSS*/
+
+input{
+    width: 2em;
+}
+
+/*
+The Score, which can be changed via an input promt, wont remain in the Interface.
+It will be changed to a fixed-score-GUI.
+*/
+.fixed-score{
+    display: none;
 }
