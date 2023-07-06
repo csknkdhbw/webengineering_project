@@ -19,8 +19,8 @@
       <link rel="stylesheet" href="../css/layout.css">
 
       <!-- include the external JavaScript source files -->
-      <script src="../src/script.js"></script>
-      <script src="../src/winner-selection.js"></script>
+      <script src="../src/script/script.js"></script>
+      <script src="../src/script/winner-selection.js"></script>
 </head>
 
 <body>
@@ -87,10 +87,10 @@
             <audio controls loop autoplay src="../res/audio/tabletennis-sample.mp3"> </audio>
 
             <!-- button for switching the view mode (DARK/WHITE) -->
-            <button id="mode-switch-button" type="button" onclick="switchMode()" onmouseover="hoverModeButton()"
-                  onmouseleave="leaveModeButton()">
-
-            <img id="mode-switch-icon" src="../res/img/mode_white.svg" alt="change mode icon">
+            <button id="mode-switch-button" type="button" onclick="switchMode()" 
+                  onmouseover="hoverModeButton()" onmouseleave="leaveModeButton()">
+                  <img id="mode-switch-icon" src="../res/img/mode_white.svg" alt="switch mode icon">
+            </button>
       </aside>
 
       <main id="main-section" class="body-content">
@@ -123,6 +123,7 @@
                   </div>
             </div>
 
+            <!-- this section describes the requirements to take part at the tournament -->
             <div id="requirements-section">
                   <h2 class="requirements" id="requirements-head">
                         <img id="requirements-icon" src="../res/img/requirements_icon.svg" alt="Home Icon">
@@ -142,6 +143,7 @@
                   </div>
             </div>
 
+            <!-- the registration process and a link to the official table tennis rules is provided here -->
             <div id="registration-section">
 
                   <h2 class="registration">
@@ -176,6 +178,7 @@
 
             </div>
 
+            <!-- in the following section the tournament process with all games is defined as a table -->
             <div id="tournament-section">
                   <h2 class="tournament-process" id="tournament-process-head">
                         <img id="tournament-process-icon" src="../res/img/tournament_process_icon.svg" alt="Home Icon">
@@ -396,6 +399,7 @@
                               </tfoot>
                         </table>
 
+                        <!-- links to tournament game tables with different sizes -->
                         <div id="tournament-reference">
                               <!-- link to another site with detailed information about small tournaments -->
                               <a href="small-tournaments-info.html"> Hinweis für kleinere Turniere </a>
@@ -405,6 +409,7 @@
                   </div>
             </div>
 
+            <!-- the winners of the tournament are presentend here on the podium -->
             <div id=podium-section>
                   <h2 class="podium">
                         <img id="podium-icon" src="../res/img/podium_icon.svg" alt="Home Icon">
@@ -436,6 +441,7 @@
                   </div>
             </div>
 
+            <!-- links to pages about past tournaments -->
             <div id="history-section">
                   <h2>
                         <img id="history-icon" src="../res/img/history_icon.svg" alt="History Icon">
@@ -445,21 +451,34 @@
                   <div class="history-pages" id="history-div">
                         <!-- navigationbar for past tournaments -->
                         <ul class="history-pages-nav">
-                              <li><a class="history-link" href="history/tournament1.html">Turnier 2022</a></li>
-                              <li><a class="history-link" href="history/tournament2.html">Turnier 2021</a></li>
-                              <li><a class="history-link" href="history/tournament3.html">Turnier 2019</a></li>
-                              <li><a class="history-link" href="history/tournament4.html">Turnier 2018</a></li>
+                              <li>
+                                    <a class="history-link" href="history/tournament1.html">Turnier 2022</a>
+                              </li>
+                              <li>
+                                    <a class="history-link" href="history/tournament2.html">Turnier 2021</a>
+                              </li>
+                              <li>
+                                    <a class="history-link" href="history/tournament3.html">Turnier 2019</a>
+                              </li>
+                              <li>
+                                    <a class="history-link" href="history/tournament4.html">Turnier 2018</a>
+                              </li>
                         </ul>
                   </div>
             </div>
 
       </main>
 
+      <!-- the footer provides links to further sites like the imprint or the image sources -->
       <footer class="body-content">
             <div id="footer-nav-bar">
                   <ul>
-                        <li> <a href="../src/imprint.html"> Impressum </a> </li>
-                        <li> <a href="../src/legal-documents.html"> Quellen </a> </li>
+                        <li>
+                              <a href="../src/imprint.html"> Impressum </a>
+                        </li>
+                        <li>
+                              <a href="../src/legal-documents.html"> Quellen </a>
+                        </li>
                         <li> <a
                                     href="https://www.bsi.bund.de/DE/Service/Haftungsausschluss/haftungsausschluss_node.html">
                                     Haftungsausschluss

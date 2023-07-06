@@ -31,7 +31,6 @@
 
 .history-link:hover {
     font-weight: bold;
-    border-color: var(--default-border);
 }
 
 main {
