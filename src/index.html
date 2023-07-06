@@ -12,15 +12,15 @@
       <title> Tischtennis Meisterschaft 2023 </title>
 
       <!-- CSS stylesheet reference -->
-      <link rel="stylesheet" href="../css/style.css" />
+      <link rel="stylesheet" href="../css/style.css">
       <!-- CSS stylesheet for the main page (index.html) header -->
-      <link rel="stylesheet" href="../css/main-header-style.css" />
+      <link rel="stylesheet" href="../css/main-header-style.css">
       <!-- CSS stylesheet for Layout -->
-      <link rel="stylesheet" href="../css/layout.css" />
+      <link rel="stylesheet" href="../css/layout.css">
 
-      <!-- include the external JavaScript file -->
-      <script type="text/javascript" src="../src/script.js"></script>
-      <script type="text/javascript" src="../src/winner-selection.js"></script>
+      <!-- include the external JavaScript source files -->
+      <script src="../src/script/script.js"></script>
+      <script src="../src/script/winner-selection.js"></script>
 </head>
 
 <body>
@@ -34,47 +34,47 @@
                   <h1> → &nbsp; 2023 &nbsp; ← </h1>
             </section>
 
+            <!-- header nav bar -->
             <nav>
-                  <!-- header nav bar -->
                   <ul id="nav-bar">
                         <li>
                               <a href="#description-head">
-                                    <img class="icon" src="../res/img/description_icon.svg" alt="Description Icon" />
+                                    <img class="icon" src="../res/img/description_icon.svg" alt="Description Icon">
                                     Beschreibung
                               </a>
                         </li>
 
                         <li>
                               <a href="#requirements-head">
-                                    <img class="icon" src="../res/img/requirements_icon.svg" alt="Requirements Icon" />
+                                    <img class="icon" src="../res/img/requirements_icon.svg" alt="Requirements Icon">
                                     Anforderungen
                               </a>
                         </li>
 
                         <li>
                               <a href="#registration-section">
-                                    <img class="icon" src="../res/img/registration_icon.svg" alt="Registration Icon" />
+                                    <img class="icon" src="../res/img/registration_icon.svg" alt="Registration Icon">
                                     Anmeldung
                               </a>
                         </li>
 
                         <li>
                               <a href="#tournament-process-head">
-                                    <img class="icon" src="../res/img/tournament_process_icon.svg" alt="Process Icon" />
+                                    <img class="icon" src="../res/img/tournament_process_icon.svg" alt="Process Icon">
                                     Turnierablauf
                               </a>
                         </li>
 
                         <li>
                               <a href="#podium-section">
-                                    <img class="icon" src="../res/img/podium_icon.svg" alt="Podium Icon" />
+                                    <img class="icon" src="../res/img/podium_icon.svg" alt="Podium Icon">
                                     Siegerpodium
                               </a>
                         </li>
 
                         <li>
                               <a href="#footer-nav-bar">
-                                    <img class="icon" src="../res/img/imprint_icon.svg" alt="Imprint Icon" />
+                                    <img class="icon" src="../res/img/imprint_icon.svg" alt="Imprint Icon">
                                     Impressum
                               </a>
                         </li>
@@ -87,25 +87,23 @@
             <audio controls loop autoplay src="../res/audio/tabletennis-sample.mp3"> </audio>
 
             <!-- button for switching the view mode (DARK/WHITE) -->
-            <abbr title="Change View Mode (DARK/WHITE)">
-                  <button id="mode-switch-button" type="button" onclick="switchMode()" onmouseover="hoverModeButton()"
-                        onmouseleave="leaveModeButton()">
-            </abbr>
-
-            <img id="mode-switch-icon" src="../res/img/mode_white.svg" />
+            <button id="mode-switch-button" type="button" onclick="switchMode()" 
+                  onmouseover="hoverModeButton()" onmouseleave="leaveModeButton()">
+                  <img id="mode-switch-icon" src="../res/img/mode_white.svg" alt="switch mode icon">
             </button>
       </aside>
 
       <main id="main-section" class="body-content">
 
             <!-- small description about the tournament -->
-
-            <passage id="description-section">
-                  <h2 class="description" id="description-head"> <img id="description-icon"
-                              src="../res/img/description_icon.svg" alt="Home Icon" /> Beschreibung
+            <div id="description-section">
+                  <h2 class="description" id="description-head">
+                        <img id="description-icon" src="../res/img/description_icon.svg" alt="Home Icon">
+                        Beschreibung
                   </h2>
-                  <div class="description" id="description-div">
-                        <article>
+
+                  <div class="description">
+                        <p>
                               Das große Tischtennis Turnier namens "Tischtennis Meisterschaft 2023" versammelt acht
                               talentierte Spieler aus der ganzen Welt. In der glänzenden Sporthalle kommt es auch dieses Jahr wieder zu einem
                               atemberaubenden Tunier.
@@ -117,31 +115,38 @@
                               Exzellenz.
                               <br>
                               Diese Exzellenz soll diese <abbr title="Tischtennis-Meisterschaft 2023"> TTM 2023 </abbr> auch wieder übertroffen werden!
-                        </article>
+                              
+                        </p>
                   </div>
+            </div>
 
-            </passage>
-            <passage id="requirements-section">
-                  <h2 class="requirements" id="requirements-head"> <img id="requirements-icon"
-                              src="../res/img/requirements_icon.svg" alt="Home Icon" /> Anforderungen
+            <!-- this section describes the requirements to take part at the tournament -->
+            <div id="requirements-section">
+                  <h2 class="requirements" id="requirements-head">
+                        <img id="requirements-icon" src="../res/img/requirements_icon.svg" alt="Home Icon">
+                        Anforderungen
                   </h2>
+
                   <!-- defines the requirements for the participants of the tournament -->
                   <div class="requirements">
-                        <section>
+                        <div>
                               <p> Folgende Dinge sind für die Teilnehmer des Turniers <em> unabdingbar: </em> </p>
                               <ul>
                                     <li> Tischtennis-Schläger </li>
                                     <li> Geld für die Anmeldegebühr </li>
                                     <li> Ein wenig Skill im Tischtennis (sehr wichtig) </li>
                               </ul>
-                        </section>
+                        </div>
                   </div>
-            </passage>
+            </div>
 
-            <passage id="registration-section">
+            <!-- the registration process and a link to the official table tennis rules is provided here -->
+            <div id="registration-section">
 
-                  <h2 class="registration"> <img id="registration-icon" src="../res/img/registration_icon.svg"
-                              alt="Home Icon" /> Anmeldung und Regeln </h2>
+                  <h2 class="registration">
+                        <img id="registration-icon" src="../res/img/registration_icon.svg" alt="Home Icon">
+                        Anmeldung und Regeln
+                  </h2>
 
                   <!-- defines the registration process for the tournament -->
                   <div class="registration" id="registration-div">
@@ -167,20 +172,23 @@
                               </a>
                         </div>
                   </div>
-            </passage>
 
+            </div>
 
-            <passage id="tournament-section">
-                  <h2 class="tournament-process" id="tournament-process-head"> <img id="tournament-process-icon"
-                              src="../res/img/tournament_process_icon.svg" alt="Home Icon" />
-                        Turnierablauf </h2>
+            <!-- in the following section the tournament process with all games is defined as a table -->
+            <div id="tournament-section">
+                  <h2 class="tournament-process" id="tournament-process-head">
+                        <img id="tournament-process-icon" src="../res/img/tournament_process_icon.svg" alt="Home Icon">
+                        Turnierablauf
+                  </h2>
+
                   <!-- provides the tournament tree with all the participants -->
                   <div class="tournament-process" id="tournament-process-div">
                         <!-- tournament tree implemented as a table -->
                         <table id="participants-table">
                               <thead>
                                     <tr>
-                                          <th colspan="4"> Ablauf des Turniers </th>
+                                          <th colspan="3"> Ablauf des Turniers </th>
                                     </tr>
                               </thead>
 
@@ -189,7 +197,7 @@
                                     <tr>
 
                                           <td class="quarter-final-td">
-                                                <section class="tournament-tree-td">
+                                                <div class="tournament-tree-td">
 
                                                       <b class="table-description">
                                                             <time datetime="2023-05-25T08:00">25.05.2023 8 Uhr</time>
@@ -198,27 +206,25 @@
                                                       Viertelfinale 1
 
                                                       <!--Input-promt-section-->
-                                                      <section class="score-input-interface">
-                                                            <input type="text" id="qf1s1"
-                                                                  class="score-text-input"></input> :
-                                                            <input type="text" id="qf1s2"
-                                                                  class="score-text-input"></input>
+                                                      <div class="score-input-interface">
+                                                            <input type="text" id="qf1s1" class="score-text-input"> :
+                                                            <input type="text" id="qf1s2" class="score-text-input">
 
                                                             <button type="button" class="score-input-button"
                                                                   onClick="update('qf1s1', 'qf1s2', 7, 8, 'sf1p1')">
                                                                   OK
                                                             </button>
-                                                      </section>
+                                                      </div>
 
                                                       Hans vs. Max
 
-                                                </section>
+                                                </div>
 
                                           </td>
 
                                           <td class="semi-final-td" rowspan="2">
 
-                                                <section class="tournament-tree-td">
+                                                <div class="tournament-tree-td">
 
                                                       <b class="table-description">
                                                             <time datetime="2023-05-26T08:00">26.05.2023 8
@@ -228,28 +234,26 @@
                                                       Halbfinale 1
 
                                                       <!--Input-promt-section-->
-                                                      <section class="score-input-interface">
-                                                            <input type="text" id="sf1s1"
-                                                                  class="score-text-input"></input> :
-                                                            <input type="text" id="sf1s2"
-                                                                  class="score-text-input"></input>
+                                                      <div class="score-input-interface">
+                                                            <input type="text" id="sf1s1" class="score-text-input"> :
+                                                            <input type="text" id="sf1s2" class="score-text-input">
 
                                                             <button type="button" class="score-input-button"
                                                                   onclick="update('sf1s1', 'sf1s2', 3, 4, 'fp1')">
                                                                   OK
                                                             </button>
-                                                      </section>
+                                                      </div>
 
                                                       <span id="sf1p1"> Halbfinalist 1 </span>
                                                       vs.
                                                       <span id="sf1p2"> Halbfinalist 2 </span>
 
-                                                </section>
+                                                </div>
                                           </td>
 
                                           <td class="final-td" rowspan="4">
 
-                                                <section class="tournament-tree-td">
+                                                <div class="tournament-tree-td">
                                                       <b class="table-description">
                                                             <time datetime="2023-05-27T08:00">27.05.2023 8 Uhr</time>
                                                       </b>
@@ -257,23 +261,21 @@
                                                       Finale
 
                                                       <!--Input-promt-section-->
-                                                      <section class="score-input-interface">
-                                                            <input type="text" id="fs1"
-                                                                  class="score-text-input"></input> :
-                                                            <input type="text" id="fs2"
-                                                                  class="score-text-input"></input>
+                                                      <div class="score-input-interface">
+                                                            <input type="text" id="fs1" class="score-text-input"> :
+                                                            <input type="text" id="fs2" class="score-text-input">
 
                                                             <button type="button" class="score-input-button"
                                                                   onclick="update('fs1', 'fs2', 1, 2, 'fw')">
                                                                   OK
                                                             </button>
-                                                      </section>
+                                                      </div>
 
                                                       <span id="fp1"> Finalist 1 </span>
                                                       vs.
                                                       <span id="fp2"> Finalist 2 </span>
                                                       <span id="fw"> <b> Gewinner </b> </span>
-                                                </section>
+                                                </div>
                                           </td>
                                     </tr>
 
@@ -282,7 +284,7 @@
 
                                           <td class="quarter-final-td">
 
-                                                <section class="tournament-tree-td">
+                                                <div class="tournament-tree-td">
                                                       <b class="table-description">
                                                             <time datetime="2023-05-25T10:00">25.05.2023 10 Uhr</time>
                                                       </b>
@@ -290,20 +292,18 @@
                                                       Viertelfinale 2
 
                                                       <!--Input-promt-section-->
-                                                      <section class="score-input-interface">
-                                                            <input type="text" id="qf2s1"
-                                                                  class="score-text-input"></input> :
-                                                            <input type="text" id="qf2s2"
-                                                                  class="score-text-input"></input>
+                                                      <div class="score-input-interface">
+                                                            <input type="text" id="qf2s1" class="score-text-input"> :
+                                                            <input type="text" id="qf2s2" class="score-text-input">
 
                                                             <button type="button" class="score-input-button"
                                                                   onclick="update('qf2s1', 'qf2s2', 9, 10, 'sf1p2')">
                                                                   OK
                                                             </button>
-                                                      </section>
+                                                      </div>
 
                                                       Tom vs. Jeremias
-                                                </section>
+                                                </div>
 
                                           </td>
                                     </tr>
@@ -313,7 +313,7 @@
 
                                           <td class="quarter-final-td">
 
-                                                <section class="tournament-tree-td">
+                                                <div class="tournament-tree-td">
                                                       <b class="table-description">
                                                             <time datetime="2023-05-25T12:00">25.05.2023 12 Uhr</time>
                                                       </b>
@@ -321,25 +321,23 @@
                                                       Viertelfinale 3
 
                                                       <!--Input-promt-section-->
-                                                      <section class="score-input-interface">
-                                                            <input type="text" id="qf3s1"
-                                                                  class="score-text-input"></input> :
-                                                            <input type="text" id="qf3s2"
-                                                                  class="score-text-input"></input>
+                                                      <div class="score-input-interface">
+                                                            <input type="text" id="qf3s1" class="score-text-input"> :
+                                                            <input type="text" id="qf3s2" class="score-text-input">
 
                                                             <button type="button" class="score-input-button"
                                                                   onclick="update('qf3s1', 'qf3s2', 11, 12, 'sf2p1')">
                                                                   OK
                                                             </button>
-                                                      </section>
+                                                      </div>
 
                                                       Lisa vs. Bob
-                                                </section>
+                                                </div>
                                           </td>
 
                                           <td class="semi-final-td" rowspan="2">
 
-                                                <section class="tournament-tree-td">
+                                                <div class="tournament-tree-td">
                                                       <b class="table-description">
                                                             <time datetime="2023-05-26T14:00">25.05.2023 14 Uhr</time>
                                                       </b>
@@ -347,132 +345,147 @@
                                                       Halbfinale 2
 
                                                       <!--Input-promt-section-->
-                                                      <section class="score-input-interface">
-                                                            <input type="text" id="sf2s1"
-                                                                  class="score-text-input"></input> :
-                                                            <input type="text" id="sf2s2"
-                                                                  class="score-text-input"></input>
+                                                      <div class="score-input-interface">
+                                                            <input type="text" id="sf2s1" class="score-text-input"> :
+                                                            <input type="text" id="sf2s2" class="score-text-input">
 
                                                             <button type="button" class="score-input-button"
                                                                   onclick="update('sf2s1', 'sf2s2', 5, 6, 'fp2')">
                                                                   OK
                                                             </button>
-                                                      </section>
+                                                      </div>
 
                                                       <span id="sf2p1"> Halbfinalist 1 </span>
                                                       vs.
                                                       <span id="sf2p2"> Halbfinalist 2 </span>
 
-                                                </section>
+                                                </div>
                                           </td>
                                     </tr>
                                     <!-- fourth row -->
                                     <tr>
                                           <td class="quarter-final-td">
-                                                <section class="tournament-tree-td">
+                                                <div class="tournament-tree-td">
                                                       <b class="table-description">
                                                             <time datetime="2023-05-25T14:00">25.05.2023 14 Uhr</time>
                                                       </b>
-                                                      
+
                                                       Viertelfinale 4
 
                                                       <!--Input-promt-section-->
-                                                      <section class="score-input-interface">
-                                                            <input type="text" id="qf4s1" class="score-text-input"></input> :
-                                                            <input type="text" id="qf4s2" class="score-text-input"></input>
-                                                   
+                                                      <div class="score-input-interface">
+                                                            <input type="text" id="qf4s1" class="score-text-input"> :
+                                                            <input type="text" id="qf4s2" class="score-text-input">
+
                                                             <button type="button" class="score-input-button"
                                                                   onclick="update('qf4s1', 'qf4s2', 13, 14, 'sf2p2')">
                                                                   OK
                                                             </button>
-                                                      </section>
-                                        
+                                                      </div>
+
                                                       Emilia vs. Georg
-                                                </section>
+                                                </div>
                                           </td>
                                     </tr>
                               </tbody>
 
                               <tfoot>
-
                                     <tr>
-                                          <th colspan="4"> Der jeweils erste Spieler hat "Heimvorteil" </th>
+                                          <th colspan="3"> Der jeweils erste Spieler hat "Heimvorteil" </th>
                                     </tr>
                               </tfoot>
                         </table>
 
-                        <section id="tournament-reference">
+                        <!-- links to tournament game tables with different sizes -->
+                        <div id="tournament-reference">
                               <!-- link to another site with detailed information about small tournaments -->
                               <a href="small-tournaments-info.html"> Hinweis für kleinere Turniere </a>
                               <!-- link to another site with detailed information about large tournaments -->
                               <a href="large-tournaments-info.html"> Hinweis für größere Turniere </a>
-                        </section>
+                        </div>
                   </div>
-            </passage>
+            </div>
 
-            <passage id=podium-section>
+            <!-- the winners of the tournament are presentend here on the podium -->
+            <div id=podium-section>
                   <h2 class="podium">
-                        <img id="podium-icon" src="../res/img/podium_icon.svg" alt="Home Icon" />
+                        <img id="podium-icon" src="../res/img/podium_icon.svg" alt="Home Icon">
                         Podium
                   </h2>
 
                   <!-- podium for the winners of the tournament -->
                   <div class="podium" id="description-div">
-                        <section id="podium">
+                        <div id="podium">
                               <div id="second" class="stage">
-                                    <section class="stage-text">
+                                    <div class="stage-text">
                                           <img src="../res/img/silver_medal_icon.png" alt="trophy_icon">
                                           <b id="second-winner"> Hans </b>
-                                    </section>
+                                    </div>
                               </div>
                               <div id="first" class="stage">
-                                    <section class="stage-text">
+                                    <div class="stage-text">
                                           <img src="../res/img/gold_medal_icon.png" alt="trophy_icon">
                                           <b id="first-winner"> Peter </b>
-                                    </section>
+                                    </div>
                               </div>
                               <div id="third" class="stage">
-                                    <section class="stage-text">
+                                    <div class="stage-text">
                                           <img src="../res/img/bronze_medal_icon.png" alt="trophy_icon">
                                           <b id="third-winner"> Gabriel </b>
-                                    </section>
+                                    </div>
                               </div>
-                        </section>
+                        </div>
                   </div>
-            </passage>
+            </div>
 
-            <passage id="history-section">
+            <!-- links to pages about past tournaments -->
+            <div id="history-section">
                   <h2>
-                        <img id="history-icon" src="../res/img/history_icon.svg" alt="History Icon" />
+                        <img id="history-icon" src="../res/img/history_icon.svg" alt="History Icon">
                         Vergangene Turniere
                   </h2>
 
                   <div class="history-pages" id="history-div">
                         <!-- navigationbar for past tournaments -->
                         <ul class="history-pages-nav">
-                              <li><a class="history-link" href="history/tournament1.html">Turnier 2022</a></li>
-                              <li><a class="history-link" href="history/tournament2.html">Turnier 2021</a></li>
-                              <li><a class="history-link" href="history/tournament3.html">Turnier 2019</a></li>
-                              <li><a class="history-link" href="history/tournament4.html">Turnier 2018</a></li>
+                              <li>
+                                    <a class="history-link" href="history/tournament1.html">Turnier 2022</a>
+                              </li>
+                              <li>
+                                    <a class="history-link" href="history/tournament2.html">Turnier 2021</a>
+                              </li>
+                              <li>
+                                    <a class="history-link" href="history/tournament3.html">Turnier 2019</a>
+                              </li>
+                              <li>
+                                    <a class="history-link" href="history/tournament4.html">Turnier 2018</a>
+                              </li>
                         </ul>
                   </div>
-            </passage>
+            </div>
 
       </main>
 
+      <!-- the footer provides links to further sites like the imprint or the image sources -->
       <footer class="body-content">
-            <section id="footer-nav-bar">
+            <div id="footer-nav-bar">
                   <ul>
-                        <li> <a href="../src/imprint.html"> Impressum </a> </li>
-                        <li> <a href="../src/legal-documents.html"> Quellen </a> </li>
+                        <li>
+                              <a href="../src/imprint.html"> Impressum </a>
+                        </li>
+                        <li>
+                              <a href="../src/legal-documents.html"> Quellen </a>
+                        </li>
                         <li> <a
                                     href="https://www.bsi.bund.de/DE/Service/Haftungsausschluss/haftungsausschluss_node.html">
                                     Haftungsausschluss
                               </a>
                         </li>
-                        <li> <a href="../src/ranking.html"> Rangliste </a> </li>
+                        <li>
+                              <a href="../src/ranking.html"> Rangliste </a>
+                        </li>
                   </ul>
-            </section>
+            </div>
       </footer>
 </body>
 

@@ -1,6 +1,7 @@
 let DARK_MODE = 0;
 let WHITE_MODE = 1;
 
+// variable mode stores the current used layout design mode
 let mode = 0;
 
 function switchMode() {
@@ -132,10 +133,10 @@ function hoverModeButton() {
       // set border according to current mode
       if (mode == DARK_MODE) {
             document.getElementById("mode-switch-button").style.border = "2px solid var(--default-border)";
-            document.getElementById("mode-switch-button").style.backgroundColor = "var(--default-background)";
+            document.getElementById("mode-switch-button").style.backgroundColor = "transparent";
       } else {
             document.getElementById("mode-switch-button").style.border = "2px solid var(--white-border)";
-            document.getElementById("mode-switch-button").style.backgroundColor = "var(--white-background)";
+            document.getElementById("mode-switch-button").style.backgroundColor = "transparent";
       }
 }
 
@@ -143,9 +144,9 @@ function leaveModeButton() {
       // set border according to current mode
       if (mode == DARK_MODE) {
             document.getElementById("mode-switch-button").style.border = "2px solid var(--default-dark)";
-            document.getElementById("mode-switch-button").style.backgroundColor = "var(--default-dark)";
+            document.getElementById("mode-switch-button").style.backgroundColor = "transparent";
       } else {
             document.getElementById("mode-switch-button").style.border = "2px solid var(--default-white)";
-            document.getElementById("mode-switch-button").style.backgroundColor = "var(--default-white)";
+            document.getElementById("mode-switch-button").style.backgroundColor = "transparent";
       }
 }

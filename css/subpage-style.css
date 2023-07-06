@@ -10,7 +10,6 @@ header {
 #subpages-div{
     display:flex;
     flex-flow: row;
-    gap: auto;
     justify-content: center;
 }
 
