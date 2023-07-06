@@ -1,7 +1,7 @@
 /*An extention file for css related to the Layout (flex-/gridbox)*/
 /*--------------------------------------------------------------*/
 
-/*History pages as a flexbox*/
+/*Displays the Past-Tournament links as a column-oriented flexbox*/
 .history-pages-nav, #legal-docs-div {
     display: flex;
     flex: 1;
@@ -33,11 +33,16 @@
     font-weight: bold;
 }
 
+
 main {
     display: grid;
 }
 
-/*Grid-layout for screen > 1300px*/
+/*
+Grid-layout for screen > 1300px
+In this layout, there are 2 columns and 5 rows.
+In essence, the second column is only used at the Tournament-section.
+*/
 @media (min-width: 1300px) {
     main {
         grid-template-columns: 2fr 1fr;
@@ -84,7 +89,11 @@ main {
 }
 
 
-/*Grid-layout for screen > 600px & < 1300px (tablet-view)*/
+/*
+Grid-layout for screen > 600px & < 1300px (tablet-view)
+In this layout, there are one column and 6 rows.
+Everything is displayed as a column-oriented list, in order to fit onto the screen.
+*/
 @media (min-width: 600px) and (max-width: 1300px) {
     main {
         grid-template-columns: auto;
@@ -127,6 +136,7 @@ main {
         grid-row: 6;
     }
 
+    /*Footer Flexbox which displays links*/
     #footer-nav-bar ul {
         flex-direction: column;
         gap: 1.5em;
@@ -134,7 +144,11 @@ main {
     }
 }
 
-/*Grid-layout for screen < 600px (mobile-view)*/
+/*
+Grid-layout for screen < 600px (mobile-view)
+In essence, this is the smaller version of the tablet view, which means that the layout has not changed
+but font-sizes were significantly decreased.
+*/
 @media (max-width: 600px) {
     main {
         grid-template-columns: auto;
@@ -188,6 +202,7 @@ main {
         grid-column: 1;
         grid-row: 6;
     }
+    /*Footer Flexbox which displays links*/
     #footer-nav-bar ul {
         padding-top: 0.5em;
         padding-bottom: 0.5em;
