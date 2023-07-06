@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css2?family=Rubik&display=swap';
 
+/*General*/
 body {
     font-family: "Rubik", sans-serif;
 
@@ -30,39 +31,10 @@ main {
     padding-bottom: 3em;
 }
 
-/*footer {
-    width: 82%;
-    margin: 0px auto;
-    background-color: gold;
-}*/
-
 footer {
     width: 100%;
     margin-bottom: 3em;
 }
-
-#footer-nav-bar {
-    width: 82%;
-    margin: 0px auto;
-    border-top: var(--border-thickness) solid var(--default-border);
-    border-bottom: var(--border-thickness) solid var(--default-border);
-}
-
-#footer-nav-bar ul {
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    display: flex;
-    list-style: none;
-    gap: 5em;
-    align-items: center;
-    justify-content: center;
-}
-
-#imprint {
-    width: 100%;
-    background-color: brown;
-}
-
 img {
     width: 29px;
     height: 29px;
@@ -91,6 +63,30 @@ tr {
     text-align: center;
 }
 
+/*------------------------------------
+Footer-navigation-bar 
+*/
+#footer-nav-bar {
+    width: 82%;
+    margin: 0px auto;
+    border-top: var(--border-thickness) solid var(--default-border);
+    border-bottom: var(--border-thickness) solid var(--default-border);
+}
+
+#footer-nav-bar ul {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    display: flex;
+    list-style: none;
+    gap: 5em;
+    align-items: center;
+    justify-content: center;
+}
+/*-------------------------------------*/
+
+/*------------------------------------
+Tournament-process table
+*/
 .quarter-final-td {
     border-radius: 25%;
     padding: 25px;
@@ -107,8 +103,11 @@ tr {
 #impressum {
     border-radius: 3%;
 }
+/*-------------------------------------*/
 
-
+/*------------------------------------
+Podium table
+*/
 #podium {
     display: flex;
     flex-direction: row;
@@ -157,6 +156,7 @@ tr {
 .stage-text b {
     text-align: center;
 }
+/*-------------------------------------*/
 
 /*
 main section layout 
